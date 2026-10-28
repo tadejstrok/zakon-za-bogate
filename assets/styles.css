@@ -385,7 +385,7 @@ input[type="range"] { width: 100%; max-width: 460px; accent-color: var(--red); m
   .measure.open .measure__side { height: 0; overflow: visible; }
   .measure.open .measure__btn { padding-bottom: 24px; }
 }
-.measure__side .tag { white-space: nowrap; font-size: 11px; letter-spacing: .04em; padding: 4px 8px; }
+.measure__side .tag { white-space: nowrap; font-size: 11px; letter-spacing: .04em; padding: 0; border: 0; }
 .measure__btn:hover .measure__title { color: var(--red); }
 .measure__ic {
   width: 128px; height: 128px; flex: none; display: grid; place-items: center;
@@ -540,7 +540,7 @@ input[type="range"] { width: 100%; max-width: 460px; accent-color: var(--red); m
   .measure__ic svg { width: 44px; height: 44px; }
   .measure__btn { grid-template-columns: 1fr auto; gap: 16px; align-items: start; }
   .measure__side { flex-direction: row; align-items: flex-start; gap: 12px; min-width: 0; }
-  .measure__side .measure__meta { flex-direction: row; flex-wrap: wrap; flex: 1 1 0; min-width: 0; }
+  .measure__side .measure__meta { flex-direction: row; flex-wrap: wrap; flex: 1 1 0; min-width: 0; gap: 8px 16px; }
   .measure__side .tag { white-space: normal; }
   .measure__toggle { width: 44px; height: 44px; font-size: 28px; }
   .measure__body { padding: 0 0 32px; }

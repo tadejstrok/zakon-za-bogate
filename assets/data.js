@@ -81,62 +81,6 @@ ZZB.ukrepi = [
     stevilkaOpis: "manj v blagajnah vsako leto (Fiskalni svet)"
   },
   {
-    id: "najemnine",
-    posledice: [
-      { k: "proracun", t: "Vsaj 50 milijonov € na leto manj v proračunu." },
-      { k: "stanovanja", t: "Nižji davek naredi oddajanje donosnejše, zato se bolj splača kupiti stanovanje za rento. Več vlagateljev pomeni višje cene stanovanj za tiste, ki iščejo dom." }
-    ],
-    clen: "4. člen",
-    clenOpis: "spremenjen 135.č člen Zakona o dohodnini",
-    stran: 5,
-    kat: "slabo",
-    skupine: ["najemniki"],
-    naslov: "Tvoja najemnina ostane ista. Najemodajalec zasluži več.",
-    uradno: "Nižja dohodnina od oddajanja premoženja",
-    kratko: "Davek na najemnine pade s 25 % na 15 % (za mlade in družine na 5 %). Najemnine se zaradi tega ne bodo znižale.",
-    kaj: [
-      "Davek na dohodek iz oddajanja nepremičnin se zniža s 25 % na 15 %. Pri dolgoročnem najemu za mlade do 30 let in družine z otroki se zniža na 5 %."
-    ],
-    zakaj: [
-      "Najemodajalci imajo na trgu premoč in najemnine dvigujejo ne glede na davek. Nižji davek ostane v njihovem žepu.",
-      "Primer: pri najemnini 700 € lastnik plača okoli 63 € manj davka na mesec. Najemnik plača enako kot prej.",
-      "Država izgubi vsaj 50 milijonov € na leto — denar, ki bi lahko šel za javna najemna stanovanja."
-    ],
-    oni: "Mladim prinaša pot do stanovanj.",
-    oniKdo: "predlagatelji zakona",
-    resnica: "Pot do stanovanj so nižje najemnine in več javnih stanovanj. Ta ukrep ne prinaša ne enega ne drugega.",
-    stevilka: "≥ 50 mio €",
-    stevilkaOpis: "na leto manj za javna stanovanja"
-  },
-  {
-    id: "airbnb",
-    posledice: [
-      { k: "stanovanja", t: "Brez omejitev kratkoročnega najema se še bolj splača kupovati stanovanja za Airbnb. Več stanovanj za turiste, manj za domačine, višje cene in najemnine." }
-    ],
-    clen: "42.–46. člen",
-    clenOpis: "začasna neuporaba Zakona o gostinstvu; 45. člen: brez časovne omejitve kratkoročnega najema v letu 2027",
-    stran: 17,
-    kat: "slabo",
-    skupine: ["najemniki"],
-    naslov: "Airbnb ostane brez omejitev",
-    uradno: "Odlog uporabe Zakona o gostinstvu (ZGos‑1)",
-    kratko: "Zakon do konca leta 2026 zamrzne regulacijo kratkoročnega oddajanja, za leto 2027 pa odpravi časovno omejitev oddajanja turistom. Manj stanovanj za domačine, višje najemnine.",
-    kaj: [
-      "Zakon do 31. decembra 2026 ustavi uporabo novega Zakona o gostinstvu, ki ureja kratkoročno oddajanje stanovanj prek platform, kot sta Airbnb in Vrbo.",
-      "Za leto 2027 kratkoročnega oddajanja stanovanj časovno ne omeji in ne uporablja uredbe o občinah z visokim tveganjem negativnih vplivov kratkoročnega najema. Soglasja sosedov za kratkoročni najem podaljša do konca leta 2027."
-    ],
-    zakaj: [
-      "Med 2015 in 2023 se je število ležišč na platformah skoraj popetorilo. V istem času so cene stanovanj zrasle za 102 %, najemnine za 73 %.",
-      "Najemnina enosobnega stanovanja v Ljubljani presega 50 % neto plače. Po merilih OECD in Eurostata ne bi smela preseči 30 %.",
-      "Za ta ukrep so lobirali lastniki Airbnb stanovanj."
-    ],
-    oni: "Ne smemo škoditi turizmu.",
-    oniKdo: "tipičen argument zagovornikov",
-    resnica: "Stanovanja so za ljudi, ki v mestu živijo in delajo. Regulacija bi že v 2027 vrnila stanovanja na najemni trg.",
-    stevilka: "+73 %",
-    stevilkaOpis: "najemnine 2015–2023"
-  },
-  {
     id: "dvozivke",
     posledice: [
       { k: "privatizacija", t: "Javni zdravniki popoldne delajo za zasebnike, čakalne vrste v javnem sistemu se daljšajo." }
@@ -214,6 +158,62 @@ ZZB.ukrepi = [
     resnica: "Učinkovitost za koga? Denar, ki bi šel za nove zdravnike in opremo, gre lastnikom.",
     stevilka: "",
     stevilkaOpis: ""
+  },
+  {
+    id: "najemnine",
+    posledice: [
+      { k: "proracun", t: "Vsaj 50 milijonov € na leto manj v proračunu." },
+      { k: "stanovanja", t: "Nižji davek naredi oddajanje donosnejše, zato se bolj splača kupiti stanovanje za rento. Več vlagateljev pomeni višje cene stanovanj za tiste, ki iščejo dom." }
+    ],
+    clen: "4. člen",
+    clenOpis: "spremenjen 135.č člen Zakona o dohodnini",
+    stran: 5,
+    kat: "slabo",
+    skupine: ["najemniki"],
+    naslov: "Tvoja najemnina ostane ista. Najemodajalec zasluži več.",
+    uradno: "Nižja dohodnina od oddajanja premoženja",
+    kratko: "Davek na najemnine pade s 25 % na 15 % (za mlade in družine na 5 %). Najemnine se zaradi tega ne bodo znižale.",
+    kaj: [
+      "Davek na dohodek iz oddajanja nepremičnin se zniža s 25 % na 15 %. Pri dolgoročnem najemu za mlade do 30 let in družine z otroki se zniža na 5 %."
+    ],
+    zakaj: [
+      "Najemodajalci imajo na trgu premoč in najemnine dvigujejo ne glede na davek. Nižji davek ostane v njihovem žepu.",
+      "Primer: pri najemnini 700 € lastnik plača okoli 63 € manj davka na mesec. Najemnik plača enako kot prej.",
+      "Država izgubi vsaj 50 milijonov € na leto — denar, ki bi lahko šel za javna najemna stanovanja."
+    ],
+    oni: "Mladim prinaša pot do stanovanj.",
+    oniKdo: "predlagatelji zakona",
+    resnica: "Pot do stanovanj so nižje najemnine in več javnih stanovanj. Ta ukrep ne prinaša ne enega ne drugega.",
+    stevilka: "≥ 50 mio €",
+    stevilkaOpis: "na leto manj za javna stanovanja"
+  },
+  {
+    id: "airbnb",
+    posledice: [
+      { k: "stanovanja", t: "Brez omejitev kratkoročnega najema se še bolj splača kupovati stanovanja za Airbnb. Več stanovanj za turiste, manj za domačine, višje cene in najemnine." }
+    ],
+    clen: "42.–46. člen",
+    clenOpis: "začasna neuporaba Zakona o gostinstvu; 45. člen: brez časovne omejitve kratkoročnega najema v letu 2027",
+    stran: 17,
+    kat: "slabo",
+    skupine: ["najemniki"],
+    naslov: "Airbnb ostane brez omejitev",
+    uradno: "Odlog uporabe Zakona o gostinstvu (ZGos‑1)",
+    kratko: "Zakon do konca leta 2026 zamrzne regulacijo kratkoročnega oddajanja, za leto 2027 pa odpravi časovno omejitev oddajanja turistom. Manj stanovanj za domačine, višje najemnine.",
+    kaj: [
+      "Zakon do 31. decembra 2026 ustavi uporabo novega Zakona o gostinstvu, ki ureja kratkoročno oddajanje stanovanj prek platform, kot sta Airbnb in Vrbo.",
+      "Za leto 2027 kratkoročnega oddajanja stanovanj časovno ne omeji in ne uporablja uredbe o občinah z visokim tveganjem negativnih vplivov kratkoročnega najema. Soglasja sosedov za kratkoročni najem podaljša do konca leta 2027."
+    ],
+    zakaj: [
+      "Med 2015 in 2023 se je število ležišč na platformah skoraj popetorilo. V istem času so cene stanovanj zrasle za 102 %, najemnine za 73 %.",
+      "Najemnina enosobnega stanovanja v Ljubljani presega 50 % neto plače. Po merilih OECD in Eurostata ne bi smela preseči 30 %.",
+      "Za ta ukrep so lobirali lastniki Airbnb stanovanj."
+    ],
+    oni: "Ne smemo škoditi turizmu.",
+    oniKdo: "tipičen argument zagovornikov",
+    resnica: "Stanovanja so za ljudi, ki v mestu živijo in delajo. Regulacija bi že v 2027 vrnila stanovanja na najemni trg.",
+    stevilka: "+73 %",
+    stevilkaOpis: "najemnine 2015–2023"
   },
   {
     id: "odskodnine",
