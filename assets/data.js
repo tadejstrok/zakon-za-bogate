@@ -1,6 +1,6 @@
 /* ============================================================
    VSEBINA STRANI — urejaj tukaj.
-   Viri in odprta vprašanja: ../material/raziskava.md
+   Viri in odprta vprašanja: material/raziskava.md
    ============================================================ */
 
 window.ZZB = {};
