@@ -17,7 +17,8 @@
   const tickerItems = [...new Set([
     "6. december: glasuj PROTI", "1,2 milijarde € luknje", "0 € za 98,5 % zaposlenih", "Zakon za bogate",
     "Dražja stanovanja", "Dvoživke v zdravstvu",
-    ...Object.values(ZZB.posledice || {})
+    ...Object.values(ZZB.posledice || {}),
+    ...Object.values(ZZB.poslediceZakona || {}).map((x) => x.naslov)
   ])];
 
   // znak strani: bogataški klobuk (cilinder)
@@ -151,7 +152,7 @@
       if ($("#c-nevarno").checked) add("Poškodba pri delu", "Malomarni delodajalec plača največ 20-kratnik najnižje pokojninske osnove.", "−", "minus");
       if ($("#c-oskrba").checked) add("Oskrba za tvoje bližnje", "Manj denarja za dolgotrajno oskrbo: nega na domu, dnevni centri, domovi.", "−", "minus");
       add("Nižji DDV na hrano", "Prihranek le, če ga trgovci prenesejo v cene. Na Hrvaškem ga niso.", "?", "zero");
-      add("Tvoj delež luknje", "1,2 mrd € (Fiskalni svet) ÷ 2,1 mio prebivalcev, preračunano na mesec.", "−" + eur(1.2e9 / 2.12e6 / 12) + "/mes.", "minus");
+      add("Delež luknje na gospodinjstvo", "1,2 mrd € (Fiskalni svet) je okoli 1.400 € za vsako gospodinjstvo na leto, preračunano na mesec.", "−" + eur(1400 / 12) + "/mes.", "minus");
 
       $("#receiptRows").innerHTML = rows.map((r) => `
         <div class="receipt__row"><div><b>${esc(r.label)}</b><small>${esc(r.note)}</small></div>
@@ -231,7 +232,7 @@
           <div class="mx">
             <section class="mx__box mx__them">
               <h4 class="mx__h">Tipičen argument zagovornikov</h4>
-              <blockquote>${esc(u.oni)}</blockquote>
+              ${(u.citati || []).map((c) => `<figure class="quote"><blockquote>${esc(c.t)}</blockquote>${c.kdo ? `<figcaption class="mono">— ${esc(c.kdo)}</figcaption>` : ""}</figure>`).join("")}
             </section>
             <section class="mx__box mx__us">
               <h4 class="mx__h red">Resnica</h4>
@@ -334,12 +335,32 @@
         <span class="pcard__t">${esc(v)}</span>
         <span class="pcard__d">${esc((ZZB.poslediceOpis || {})[k] || "")}</span>
         <span class="mono pcard__n">${n(k)} ${ukr(n(k))} →</span>
+      </a>`).join("") + Object.entries(ZZB.poslediceZakona || {}).map(([k, x]) => `
+      <a class="pcard" href="ukrepi.html#racun">
+        <span class="pcard__ic">${IC.posledice[k] || ""}</span>
+        <span class="pcard__t">${esc(x.naslov)}</span>
+        <span class="pcard__d">${esc(x.opis)}</span>
+        <span class="mono pcard__n">Cel zakon →</span>
       </a>`).join("") + `
       <a class="pcard pcard--all" href="ukrepi.html">
         <span class="pcard__t">Vsi ukrepi</span>
         <span class="pcard__d">Preveri vseh ${ZZB.ukrepi.length} ukrepov in v katerem členu zakona so zapisani.</span>
         <span class="mono pcard__n">Spoznaj ukrepe →</span>
       </a>`;
+  }
+
+  /* ---------- kaj bi lahko imeli namesto 1,2 milijarde ---------- */
+  const nam = $("#namesto");
+  if (nam && ZZB.namesto) {
+    const N = ZZB.namesto;
+    $("#namestoGosp").textContent = N.gospodinjstvo;
+    $("#namestoGospOpis").textContent = N.gospodinjstvoOpis;
+    nam.innerHTML = N.primerjave.map((x) => `
+      <div class="ncard">
+        <span class="ncard__st">${esc(x.st)}</span>
+        <span class="ncard__t">${esc(x.t)}</span>
+        <span class="mono ncard__v">${esc(x.vir)}</span>
+      </div>`).join("");
   }
 
   /* ---------- predogled ukrepov na vstopni strani ---------- */
@@ -393,7 +414,7 @@
   /* ---------- argumentarij ---------- */
   const args = $("#args");
   if (args) {
-    args.innerHTML = ZZB.miti.map((m) => `<div class="arg"><q>${esc(m.oni)}</q><p>${esc(m.mi)}</p></div>`).join("");
+    args.innerHTML = ZZB.miti.map((m) => `<div class="arg"><q>${esc(m.oni)}</q>${m.kdo ? `<span class="who">— ${esc(m.kdo)}</span>` : ""}<p>${esc(m.mi)}</p></div>`).join("");
   }
 
   /* ---------- dogodki ---------- */

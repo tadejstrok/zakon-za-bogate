@@ -218,6 +218,24 @@ Razvrstitev sledi dokumentu: **Slabo** · **Zapleteno, a slabo** · **Zapleteno*
 4. Kdo vlaga zakon o DDV z mehanizmom in kdaj
 5. Točno število glasov PROTI za kvorum → DVK
 6. Datumi predčasnega glasovanja in glasovanja po pošti → DVK
+7. Upokojitev: »Ustavno sodišče je takšno ureditev v preteklosti že spoznalo za neustavno« → poiskati številko odločbe (verjetno 188. člen ZUJF). Do potrditve na strani ostaja »verjetno protiustavna«.
+8. Normiranci: 28.944 € (normiranec) proti 48.240 € (zaposleni) pri 120.000 € — samo prispevki ali davki in prispevki skupaj? Na stran še ni dodano.
+9. Proračun 2027, družinski prejemki: v dokumentu besedilo »−160 mio €«, tabela pa −139,9 mio € (proti 2026) oz. −71,8 mio € (proti sprejetemu 2027). Na strani uporabljeno samo »330 mio € manj za transferje« (Fiskalni svet).
+
+---
+
+## 7. Dopolnitve iz dokumenta »Kaj prinašata Proračun 2027 in Interventni zakon?« (28. 10. 2026)
+
+Uporabljeno na strani:
+
+- **Podcenjenost:** predlagatelji so v zakon zapisali 571,7 mio €, Fiskalni svet ocenjuje 1,2 mrd €. Kapica: 55,7 mio € v zakonu proti 264 mio € (FS).
+- **Trajna luknja:** oktobrska ocena FS — trajno poslabšanje za 0,7 % BDP (> pol mrd € letno). Citat FS: rast »tudi na dolgi rok ne bi zadoščala za nadomestitev izhodiščnega poslabšanja«.
+- **Primanjkljaj** 2,9 % BDP; Mojmir Mrak (Odmevi): »to pomeni drastično rezanje«.
+- **1,2 mrd € ≈ 1.400 € na gospodinjstvo.** Primerjave: brezplačni vrtci 170 mio €/leto (7×), kosila za osnovnošolce 77 mio €/leto (15 let), 5-odstotna uskladitev pokojnin 407 mio € (≈ +15 %), Infekcijska klinika 156 mio € (≈ 8), stanovanja 100 mio €/leto (12 let), obvezno zdravstveno zavarovanje 6,2 mrd € (⅕).
+- **Kapica:** prag ≈ 3× povprečna, 5× minimalna plača; v povprečju ≈ 20.000 € letno na upravičenca; pri 50.000 € plače se prispevki plačajo le od 15 % plače; Brodnjakov dodatek > 10 let neto plače medicinske sestre.
+- **DDV, Hrvaška 2022:** mesec po znižanju je cene za višino davka znižala le tretjina trgovcev; svinjina in ribe po znižanju dražje.
+- **Proračun 2027 (FS):** 330 mio € (−14,9 %) manj za transferje posameznikom in gospodinjstvom → nova posledica »Rezi socialnih pravic« na vstopni strani.
+- **Citati zagovornikov:** Rado Gladek (SDS): »To niso ukrepi za bogate, to so ukrepi za normalno življenje.« · Mojca Žnidarič (Demokrati): »Naš cilj je preprost: nižje položnice, nižji davčni pritisk na delo, lažji dostop mladim do stanovanj.« · minister Anže Logar v Odmevih (povzetek): z zakonom se bodo pocenile tudi najemnine.
 
 ---
 

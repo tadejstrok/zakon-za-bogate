@@ -42,6 +42,28 @@ ZZB.poslediceOpis = {
   oskrba: "Sistem dolgotrajne oskrbe izgubi denar, še preden zares zaživi."
 };
 
+/* Posledica celega zakona (ni vezana na posamezen ukrep) — samo na vstopni strani in v traku */
+ZZB.poslediceZakona = {
+  rezi: {
+    naslov: "Rezi socialnih pravic",
+    opis: "Zakon izpada ne pokrije niti s centom. Vlada že v proračunu 2027 predvideva 330 milijonov € manj za transferje: otroški dodatek, starševska nadomestila, socialno pomoč in osebno asistenco (Fiskalni svet)."
+  }
+};
+
+/* Kaj bi lahko imeli namesto 1,2 milijarde € (vstopna stran) */
+ZZB.namesto = {
+  gospodinjstvo: "1.400 €",
+  gospodinjstvoOpis: "za vsako slovensko gospodinjstvo — toliko denarja zakon vzame javnim blagajnam že prvo leto",
+  primerjave: [
+    { st: "7×", t: "toliko, kot bi na leto stali brezplačni vrtci za vse otroke", vir: "170 milijonov € na leto" },
+    { st: "15 let", t: "brezplačnih kosil za vse osnovnošolce", vir: "77 milijonov € na leto" },
+    { st: "+15 %", t: "za vse pokojnine — skoraj toliko bi jih lahko uskladili", vir: "letošnja 5-odstotna uskladitev stane 407 milijonov €" },
+    { st: "8", t: "novih klinik, kot je nova Infekcijska klinika v Ljubljani", vir: "156 milijonov € za eno" },
+    { st: "12 let", t: "državnega denarja za gradnjo stanovanj", vir: "100 milijonov € na leto" },
+    { st: "⅕", t: "vsega denarja obveznega zdravstvenega zavarovanja", vir: "6,2 milijarde €" }
+  ]
+};
+
 ZZB.skupine = {
   zaposleni: "Zaposleni",
   najemniki: "Najemniki",
@@ -72,10 +94,14 @@ ZZB.ukrepi = [
     ],
     zakaj: [
       "Čistilka na minimalni plači (1.277 €), medicinska sestra (1.900 €), inženir (3.500 €), zdravnik specialist (4.800 €) in celo poslanec (5.000 €) ne dobijo nič.",
-      "Korist dobi okoli 13.000 ljudi z najvišjimi plačami — 1,5 % zaposlenih. Predsednik uprave NLB (2025: 1,8 milijona € bruto) bi dobil okoli 16.000 € več neto na mesec, približno 200.000 € na leto."
+      "Prag je skoraj trikratnik povprečne in petkratnik minimalne plače. Kdor zasluži 1.500 €, plača prispevke od vsakega evra. Kdor zasluži 50.000 € na mesec, jih plača le od 15 % plače.",
+      "Korist dobi manj kot 13.000 ljudi z najvišjimi plačami — v povprečju okoli 20.000 € na leto vsak. Predsednik uprave NLB (2025: 1,8 milijona € bruto) bi dobil okoli 16.000 € več neto na mesec, približno 200.000 € na leto. To je več kot deset let neto plače medicinske sestre.",
+      "Predlagatelji so strošek kapice v zakonu ocenili na 55,7 milijona €. Fiskalni svet ocenjuje 264 milijonov € — skoraj petkrat več."
     ],
-    oni: "To je razvojni zakon, ne zakon za bogate.",
-    oniKdo: "Peter Papež, državni sekretar",
+    citati: [
+      { t: "To je razvojni zakon, ne zakon za bogate.", kdo: "Peter Papež, državni sekretar" },
+      { t: "To niso ukrepi za bogate, to so ukrepi za normalno življenje.", kdo: "Rado Gladek, poslanec SDS" }
+    ],
     resnica: "Za 98,5 % zaposlenih je učinek natanko 0 €. Ker pravice v zdravstvu niso vezane na vplačila, je kapica pri zdravstvu in oskrbi čista izguba za vse ostale.",
     stevilka: "264 mio €",
     stevilkaOpis: "manj v blagajnah vsako leto (Fiskalni svet)"
@@ -100,8 +126,9 @@ ZZB.ukrepi = [
       "To smo že imeli. Isti zdravniki delajo manj v javnem sistemu in več popoldne pri zasebnikih.",
       "V letih 2022–2024 je to pomenilo rekordne dobičke zasebnikov in daljše čakalne vrste za večino pacientov."
     ],
-    oni: "Zdravnikom omogočamo, da delajo, in krajšamo čakalne vrste.",
-    oniKdo: "koalicija",
+    citati: [
+      { t: "Zdravnikom omogočamo, da delajo, in krajšamo čakalne vrste.", kdo: "" }
+    ],
     resnica: "Zdravnik ne more biti hkrati na dveh mestih. Ure, ki jih dela pri zasebniku, manjkajo v javni bolnišnici.",
     stevilka: "8 ur",
     stevilkaOpis: "na teden pri zasebniku"
@@ -127,8 +154,9 @@ ZZB.ukrepi = [
       "Leta 2022 so zasebniki po interventnem zakonu dobili 160 milijonov € za plačilo storitev po realizaciji.",
       "Po podatkih NIJZ so se čakalne dobe po letu dni marsikje celo podaljšale. Zasebniki so izbirali donosnejše in enostavnejše posege, zahtevni primeri pa so ostali javnim bolnišnicam."
     ],
-    oni: "Zasebniki bodo skrajšali čakalne vrste.",
-    oniKdo: "predlagatelji",
+    citati: [
+      { t: "Zasebniki bodo skrajšali čakalne vrste.", kdo: "" }
+    ],
     resnica: "Leta 2022 je to stalo 160 milijonov € in vrste niso bile krajše.",
     stevilka: "160 mio €",
     stevilkaOpis: "zasebnikom leta 2022 — brez krajših vrst"
@@ -153,8 +181,9 @@ ZZB.ukrepi = [
       "Denar iz obveznega zavarovanja vseh nas se ne bo več vračal v kadre, opremo in nove programe.",
       "Javna zdravstvena mreža postane vir zasebnih dividend."
     ],
-    oni: "Zasebna pobuda prinaša učinkovitost.",
-    oniKdo: "tipičen argument zagovornikov",
+    citati: [
+      { t: "Zasebna pobuda prinaša učinkovitost.", kdo: "" }
+    ],
     resnica: "Učinkovitost za koga? Denar, ki bi šel za nove zdravnike in opremo, gre lastnikom.",
     stevilka: "",
     stevilkaOpis: ""
@@ -177,12 +206,14 @@ ZZB.ukrepi = [
       "Davek na dohodek iz oddajanja nepremičnin se zniža s 25 % na 15 %. Pri dolgoročnem najemu za mlade do 30 let in družine z otroki se zniža na 5 %."
     ],
     zakaj: [
-      "Najemodajalci imajo na trgu premoč in najemnine dvigujejo ne glede na davek. Nižji davek ostane v njihovem žepu.",
+      "Zakon znižuje davek najemodajalcem, višine najemnin pa ne ureja v nobenem členu. Najemodajalci imajo na trgu premoč in najemnine dvigujejo ne glede na davek. Nižji davek ostane v njihovem žepu.",
       "Primer: pri najemnini 700 € lastnik plača okoli 63 € manj davka na mesec. Najemnik plača enako kot prej.",
       "Država izgubi vsaj 50 milijonov € na leto — denar, ki bi lahko šel za javna najemna stanovanja."
     ],
-    oni: "Mladim prinaša pot do stanovanj.",
-    oniKdo: "predlagatelji zakona",
+    citati: [
+      { t: "Mladim prinaša pot do stanovanj.", kdo: "" },
+      { t: "Z zakonom se bodo pocenile tudi najemnine.", kdo: "minister Anže Logar v Odmevih (povzetek)" }
+    ],
     resnica: "Pot do stanovanj so nižje najemnine in več javnih stanovanj. Ta ukrep ne prinaša ne enega ne drugega.",
     stevilka: "≥ 50 mio €",
     stevilkaOpis: "na leto manj za javna stanovanja"
@@ -209,8 +240,9 @@ ZZB.ukrepi = [
       "Najemnina enosobnega stanovanja v Ljubljani presega 50 % neto plače. Po merilih OECD in Eurostata ne bi smela preseči 30 %.",
       "Za ta ukrep so lobirali lastniki Airbnb stanovanj."
     ],
-    oni: "Ne smemo škoditi turizmu.",
-    oniKdo: "tipičen argument zagovornikov",
+    citati: [
+      { t: "Ne smemo škoditi turizmu.", kdo: "" }
+    ],
     resnica: "Stanovanja so za ljudi, ki v mestu živijo in delajo. Regulacija bi že v 2027 vrnila stanovanja na najemni trg.",
     stevilka: "+73 %",
     stevilkaOpis: "najemnine 2015–2023"
@@ -236,8 +268,9 @@ ZZB.ukrepi = [
       "Stroške poškodb pri delu — zdravljenje, izgubljen dohodek, trajne posledice — nosita poškodovani delavec in javna blagajna.",
       "Malomarni delodajalec je nagrajen, skrben delodajalec ne dobi nič."
     ],
-    oni: "Zmanjšujemo finančna tveganja za podjetja.",
-    oniKdo: "zagovorniki zakona",
+    citati: [
+      { t: "Zmanjšujemo finančna tveganja za podjetja.", kdo: "" }
+    ],
     resnica: "Tveganje ne izgine. Prenese se na delavca, ki je že poškodovan.",
     stevilka: "20×",
     stevilkaOpis: "najnižje pokojninske osnove — strop odškodnine"
@@ -264,8 +297,9 @@ ZZB.ukrepi = [
       "Nižji prispevki pomenijo pokojnino pod pragom revščine.",
       "Mikro s.p. bi plačeval pol manj kot zaposleni na minimalni plači — sistem postane nepravičen do zaposlenih."
     ],
-    oni: "Razbremenjujemo tiste, ki zaslužijo najmanj.",
-    oniKdo: "predlagatelji",
+    citati: [
+      { t: "Razbremenjujemo tiste, ki zaslužijo najmanj.", kdo: "" }
+    ],
     resnica: "Tistim z najnižjimi dohodki pomaga dostojna minimalna plača in redna zaposlitev, ne cenejša prekarnost.",
     stevilka: "650 → 250 €",
     stevilkaOpis: "prispevki na mesec — in nižja pokojnina"
@@ -297,8 +331,9 @@ ZZB.ukrepi = [
       "Polno pokojnino ob plači bodo izkoristili najbolje plačani — zdravniki, odvetniki, vodilni. Delavci po težkem fizičnem delu te možnosti nimajo, luknjo pa plačajo vsi.",
       "Določba je verjetno protiustavna."
     ],
-    oni: "Upokojencem, ki delajo, dajemo polno plačo in polno pokojnino.",
-    oniKdo: "koalicija",
+    citati: [
+      { t: "Upokojencem, ki delajo, dajemo polno plačo in polno pokojnino.", kdo: "" }
+    ],
     resnica: "Ne povedo, da te prej avtomatsko odpustijo.",
     stevilka: "257 mio €",
     stevilkaOpis: "na leto manj v pokojninski blagajni (Fiskalni svet)"
@@ -322,7 +357,7 @@ ZZB.ukrepi = [
     ],
     zakaj: [
       "Koristi dobro plačanim svetovalcem, IT strokovnjakom, odvetnikom in zdravnikom, ki si s.p. izberejo zaradi nižjih dajatev.",
-      "Spodbuja navidezno samozaposlovanje in izčrpava pokojninsko in zdravstveno blagajno."
+      "Spodbuja navidezno samozaposlovanje in izčrpava pokojninsko in zdravstveno blagajno. To ni pomoč malim podjetnikom, ampak nagrada za to, da delodajalec delavca ne zaposli, ampak ga najame kot s.p. — brez dopusta, bolniške in odpovednega roka."
     ],
     tabela: [
       ["30.000 €", "1.200 €", "1.200 €", "0 €"],
@@ -333,8 +368,9 @@ ZZB.ukrepi = [
       ["120.000 €", "14.400 €", "5.200 €", "9.200 €"],
       ["150.000 €", "24.900 €", "8.800 €", "16.100 €"]
     ],
-    oni: "Razbremenjujemo male podjetnike.",
-    oniKdo: "predlagatelji",
+    citati: [
+      { t: "Razbremenjujemo male podjetnike.", kdo: "" }
+    ],
     resnica: "Mali podjetnik z 50.000 € prihodkov dobi 0 €. Tisti s 150.000 € dobi 16.100 € na leto.",
     stevilka: "−65 %",
     stevilkaOpis: "davka pri 150.000 € prihodkov"
@@ -360,8 +396,9 @@ ZZB.ukrepi = [
       "Ruši se načelo, da se prispevki plačujejo od vsakega dohodka, ne glede na obliko dela.",
       "Odpira vrata naslednjim izjemam."
     ],
-    oni: "Ta prispevek že plačujem od zaposlitve. Zakaj bi ga dvakrat?",
-    oniKdo: "zagovorniki ukrepa",
+    citati: [
+      { t: "Ta prispevek že plačujem od zaposlitve. Zakaj bi ga dvakrat?", kdo: "" }
+    ],
     resnica: "Prispevek plačuješ od dohodka, ne od osebe. Več zaslužiš, več prispevaš — tako deluje solidarnost.",
     stevilka: "",
     stevilkaOpis: ""
@@ -386,8 +423,9 @@ ZZB.ukrepi = [
       "Sistem dolgotrajne oskrbe — nega na domu, dnevni centri, domovi za starejše — šele nastaja. Ukinitev vira takoj po začetku pomeni manj storitev ali odvisnost od vsakoletnega proračuna.",
       "Pri pokojnini 900 € je to 9 € na mesec. Ura oskrbe na domu stane več."
     ],
-    oni: "Višje pokojnine za vse upokojence.",
-    oniKdo: "koalicija",
+    citati: [
+      { t: "Višje pokojnine za vse upokojence.", kdo: "" }
+    ],
     resnica: "9 € danes, a manj oskrbe takrat, ko jo boš potreboval_a.",
     stevilka: "94 mio €",
     stevilkaOpis: "manj za dolgotrajno oskrbo (ocena sindikatov, cel zakon)"
@@ -411,12 +449,14 @@ ZZB.ukrepi = [
     ],
     zakaj: [
       "Nižji DDV na energijo ni samodejen: zakon vladi to le dovoljuje.",
-      "Znižanja DDV se praviloma ne prelijejo v nižje cene, ampak v višje marže trgovcev in dobaviteljev.",
-      "Na Hrvaškem, ki je DDV na hrano znižala leta 2022, so cene hitro dohitele ali prehitele prejšnje.",
+      "Zakon v nobenem členu ne določa, da se morajo znižati tudi cene. Znižanja DDV se praviloma ne prelijejo v nižje cene, ampak v višje marže trgovcev in dobaviteljev.",
+      "Na Hrvaškem, ki je DDV na hrano znižala leta 2022, je mesec pozneje cene za višino znižanega davka znižala le tretjina trgovcev. Pri svinjini in ribah so bile cene po znižanju celo višje kot pred njim.",
       "Nižji DDV je v zakon zavit kot sladkor, ki naj bi prekril vse ostalo."
     ],
-    oni: "Zakon vsem nekaj da in nikomur nič ne vzame.",
-    oniKdo: "NSi–SLS–Fokus, Resni.ca",
+    citati: [
+      { t: "Zakon vsem nekaj da in nikomur nič ne vzame.", kdo: "NSi–SLS–Fokus, Resni.ca" },
+      { t: "Naš cilj je preprost: nižje položnice, nižji davčni pritisk na delo, lažji dostop mladim do stanovanj.", kdo: "Mojca Žnidarič, Demokrati" }
+    ],
     resnica: "Za nižji DDV smo — z mehanizmom, ki zagotovi, da se cene res znižajo. Tak zakon bomo vložili s podpisi volivcev.",
     stevilka: "5 %",
     stevilkaOpis: "DDV — če trgovci znižajo cene"
@@ -425,15 +465,18 @@ ZZB.ukrepi = [
 
 /* ---------- ARGUMENTARIJ (za pogovore) ---------- */
 ZZB.miti = [
-  { oni: "Vsem nekaj da, nikomur nič ne vzame.", kdo: "predlagatelji", mi: "Fiskalni svet: 1,2 milijarde € luknje že prvo leto. Plačali jo bomo z daljšimi vrstami, nižjimi pokojninami in manj oskrbe." },
-  { oni: "To je razvojni zakon, ne zakon za bogate.", kdo: "vlada", mi: "Osrednji ukrep koristi 1,5 % zaposlenih. Za vse ostale prinaša 0 €." },
-  { oni: "Rast bo pokrila izpad.", kdo: "predlagatelji", mi: "Fiskalni svet: rast pokrije četrtino takoj in polovico v desetih letih. Javni dolg je čez 10 let višji za 8 % BDP." },
-  { oni: "Mladim prinaša pot do stanovanj.", kdo: "koalicija", mi: "Nižji davek dobi lastnik, Airbnb ostane neomejen. Najemnine ne padejo." },
-  { oni: "Zdravniki bodo lahko delali več, vrste bodo krajše.", kdo: "koalicija", mi: "To smo že imeli. 2022–2024: rekordni dobički zasebnikov, daljše vrste." },
-  { oni: "Upokojenci dobijo polno plačo in pokojnino.", kdo: "koalicija", mi: "Najprej jim pogodba avtomatsko preneha. Naprej delajo le, če jih delodajalec hoče." },
-  { oni: "Kar je dobro za gospodarstvo, je dobro za ljudi.", kdo: "GZS", mi: "Kar je dobro za lastnike in uprave, ni nujno dobro za tiste, ki delajo." },
-  { oni: "Referendum bo za leto dni blokiral rešitve.", kdo: "GZS", mi: "Nižji DDV lahko DZ sprejme jutri v ločenem zakonu. Ni treba v paketu z darili za najbogatejše." },
-  { oni: "Gre za boj razvoja proti zavisti.", kdo: "Janez Janša", mi: "Ne gre za zavist. Gre za to, kdo plača račun." }
+  { oni: "Vsem nekaj da, nikomur nič ne vzame.", kdo: "NSi–SLS–Fokus, Resni.ca", mi: "Fiskalni svet: 1,2 milijarde € luknje že prvo leto. Predlagatelji so v zakon zapisali 571,7 milijona € — podcenili so ga za polovico." },
+  { oni: "To je razvojni zakon, ne zakon za bogate.", kdo: "Peter Papež, državni sekretar", mi: "Osrednji ukrep koristi 1,5 % zaposlenih. Za vse ostale prinaša 0 €." },
+  { oni: "To niso ukrepi za bogate, to so ukrepi za normalno življenje.", kdo: "Rado Gladek, poslanec SDS", mi: "Kapica da v povprečju okoli 20.000 € na leto vsakemu od manj kot 13.000 najbolje plačanih. Kdor zasluži 1.500 €, ne dobi nič." },
+  { oni: "Rast bo pokrila izpad.", kdo: "", mi: "Fiskalni svet: rast »tudi na dolgi rok ne bi zadoščala za nadomestitev izhodiščnega poslabšanja«. Zakon javne finance trajno poslabša za 0,7 % BDP — več kot pol milijarde € vsako leto." },
+  { oni: "Z zakonom se bodo pocenile tudi najemnine.", kdo: "minister Anže Logar v Odmevih (povzetek)", mi: "Zakon znižuje davek najemodajalcem, višine najemnin pa ne ureja v nobenem členu." },
+  { oni: "Naš cilj je preprost: nižje položnice, nižji davčni pritisk na delo, lažji dostop mladim do stanovanj.", kdo: "Mojca Žnidarič, Demokrati", mi: "Zakon nikjer ne zahteva nižjih cen. Na Hrvaškem je po znižanju DDV cene znižala le tretjina trgovcev." },
+  { oni: "Mladim prinaša pot do stanovanj.", kdo: "", mi: "Nižji davek dobi lastnik, Airbnb ostane neomejen. Najemnine ne padejo." },
+  { oni: "Zdravniki bodo lahko delali več, vrste bodo krajše.", kdo: "", mi: "To smo že imeli. 2022–2024: rekordni dobički zasebnikov, daljše vrste." },
+  { oni: "Upokojenci dobijo polno plačo in pokojnino.", kdo: "", mi: "Najprej jim pogodba avtomatsko preneha. Naprej delajo le, če jih delodajalec hoče." },
+  { oni: "Kar je dobro za gospodarstvo, je dobro za ljudi.", kdo: "Tibor Šimonka (GZS) in Leon Korošec (povzetek)", mi: "Kar je dobro za lastnike in uprave, ni nujno dobro za tiste, ki delajo." },
+  { oni: "Referendum bo za leto dni blokiral rešitve.", kdo: "Tibor Šimonka, GZS (povzetek)", mi: "Nižji DDV lahko DZ sprejme jutri v ločenem zakonu. Ni treba v paketu z darili za najbogatejše." },
+  { oni: "Gre za boj med konceptom razvoja in konceptom zavisti.", kdo: "Janez Janša (povzetek)", mi: "Ne gre za zavist. Gre za to, kdo plača račun." }
 ];
 
 /* ---------- GRAFIKE ZA DELJENJE ----------
@@ -445,6 +488,9 @@ ZZB.grafike = [
   { naslov: "Najemnina ostane ista",     tema: "stanovanja", barva: "paper", velik: "Tvoja najemnina: ista.", mali: "Davek tvojega najemodajalca: −40 %.", src: "" },
   { naslov: "1,2 milijarde",            tema: "splosno", barva: "gold",  velik: "1,2 mrd €",                  mali: "luknje v javnih financah prvo leto — Fiskalni svet", src: "" },
   { naslov: "Čakaš ti, zasluži zasebnik", tema: "zdravstvo", barva: "red", velik: "Čakaš ti.",                 mali: "Zasluži zasebnik. Zakon vrača zdravnike dvoživke.", src: "" },
+  { naslov: "1.400 € na gospodinjstvo", tema: "splosno", barva: "red", velik: "1.400 €", mali: "za vsako gospodinjstvo. Toliko zakon vzame javnim blagajnam že prvo leto.", src: "" },
+  { naslov: "7× brezplačni vrtci", tema: "splosno", barva: "gold", velik: "7× brezplačni vrtci", mali: "1,2 milijarde € je sedemkrat toliko, kot bi na leto stali brezplačni vrtci za vse otroke.", src: "" },
+  { naslov: "15 let brezplačnih kosil", tema: "splosno", barva: "paper", velik: "15 let brezplačnih kosil", mali: "za vse osnovnošolce. Ali pa davčno darilo za najbogatejše.", src: "" },
   { naslov: "Pogoji za upokojitev",      tema: "delo",    barva: "ink",   velik: "Izpolniš pogoje? Ostaneš brez službe.", mali: "Interventni zakon, člen o upokojevanju", src: "" }
 ];
 ZZB.temeGrafik = { vse: "Vse", splosno: "Splošno", kapica: "Kapica", stanovanja: "Stanovanja", zdravstvo: "Zdravstvo", delo: "Delo" };

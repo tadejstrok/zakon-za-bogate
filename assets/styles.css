@@ -714,3 +714,44 @@ input[type="range"] { width: 100%; max-width: 460px; accent-color: var(--red); m
 .posbox { row-gap: 0; }
 .posbox__h { grid-column: 1 / -1; }
 @media (max-width: 900px) { .posbox .mx__num { margin-top: 24px; } }
+
+/* ---------- vstopna stran: za kaj v resnici gre ---------- */
+.zakaj__h { max-width: 24ch; margin-bottom: 48px; }
+.zakaj__cols { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; max-width: 1100px; }
+.zakaj__cols p { margin: 0; font-size: 20px; line-height: 1.5; }
+
+/* ---------- vstopna stran: namesto tega ---------- */
+.namesto__gosp { display: flex; flex-direction: column; gap: 8px; max-width: 360px; margin: 0; color: #C9C4B8; font-size: 17px; line-height: 1.4; }
+.namesto__gosp .d { font-size: clamp(64px, 7vw, 112px); color: var(--paper); }
+.ngrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: var(--paper); border: 2px solid var(--paper); }
+.ncard { background: var(--ink); padding: 24px; display: flex; flex-direction: column; gap: 12px; min-height: 220px; }
+.ncard__st { font-family: var(--display); font-stretch: 62%; font-weight: 900; font-size: clamp(56px, 5.5vw, 88px); line-height: .85; color: var(--red); white-space: nowrap; }
+.ncard__t { font-size: 18px; line-height: 1.4; }
+.ncard__v { margin-top: auto; font-size: 11px; color: #A9A49A; }
+.namesto__vir { margin: 16px 0 0; font-size: 11px; color: #A9A49A; }
+
+/* ---------- podstran ukrepi: kdo plača račun ---------- */
+.racun__txt { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; margin-top: 48px; max-width: 1100px; }
+.racun__txt p { margin: 0; font-size: 18px; line-height: 1.5; color: #C9C4B8; }
+
+/* ---------- več citatov zagovornikov ---------- */
+.quote { margin: 0; }
+.quote + .quote { margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--line); }
+.quote blockquote { margin: 0; font-family: var(--display); font-stretch: 75%; font-weight: 800; font-size: 26px; line-height: 1.05; }
+.quote blockquote::before { content: "„"; }
+.quote blockquote::after { content: "“"; }
+.quote figcaption { margin-top: 8px; font-size: 11px; color: var(--muted); }
+
+/* posledice na vstopni strani: 3 stolpci (7 posledic + rezi + vsi ukrepi) */
+.pgrid { grid-template-columns: repeat(3, 1fr); }
+
+@media (max-width: 900px) {
+  .zakaj__cols, .racun__txt { grid-template-columns: 1fr; gap: 16px; }
+  .zakaj__cols p { font-size: 18px; }
+  .ngrid { grid-template-columns: 1fr 1fr; }
+  .pgrid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .ngrid, .pgrid { grid-template-columns: 1fr; }
+  .ncard { min-height: 0; padding: 16px; }
+}
