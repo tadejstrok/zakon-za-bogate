@@ -222,12 +222,10 @@
             ${u.tabela ? `<table class="mb-table"><thead><tr><th>Prihodki</th><th>Davek zdaj</th><th>Po zakonu</th><th>Odpustek</th></tr></thead><tbody>${u.tabela.map((r) => `<tr>${r.map((c) => `<td>${c}</td>`).join("")}</tr>`).join("")}</tbody></table>` : ""}
           </div>
           <section class="posbox">
-            <div>
-              <h4 class="mx__h">Posledice</h4>
-              <ul class="pos-list">${(u.posledice || []).map((p) => `
-                <li><span class="pos-list__ic">${posIc(p.k)}</span><span><b>${esc(ZZB.posledice[p.k])}</b>${esc(p.t)}</span></li>`).join("")}
-              </ul>
-            </div>
+            <h4 class="mx__h posbox__h">Posledice</h4>
+            <ul class="pos-list">${(u.posledice || []).map((p) => `
+              <li><span class="pos-list__ic">${posIc(p.k)}</span><span><b>${esc(ZZB.posledice[p.k])}</b>${esc(p.t)}</span></li>`).join("")}
+            </ul>
             ${u.stevilka ? `<div class="mx__num"><span class="d">${esc(u.stevilka)}</span><span>${esc(u.stevilkaOpis)}</span></div>` : ""}
           </section>
           <div class="mx">

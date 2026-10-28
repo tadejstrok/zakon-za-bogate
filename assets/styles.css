@@ -653,12 +653,12 @@ input[type="range"] { width: 100%; max-width: 460px; accent-color: var(--red); m
 
 /* posledice: samostojen okvir pod razlago */
 .posbox {
-  border: 0; background: none;
-  padding: 0; margin-bottom: 24px;
+  border: 2px solid var(--ink); background: var(--paper);
+  padding: 24px; margin-bottom: 24px;
   display: grid; grid-template-columns: 1fr auto; gap: 32px; align-items: start;
 }
 @media (max-width: 900px) {
-  .posbox { grid-template-columns: 1fr; padding: 0; gap: 24px; }
+  .posbox { grid-template-columns: 1fr; padding: 16px; gap: 24px; }
   .mx__num { width: auto; }
 }
 
@@ -709,3 +709,8 @@ input[type="range"] { width: 100%; max-width: 460px; accent-color: var(--red); m
 @media (max-width: 900px) {
   .filters__bar .filters__end { width: auto; margin-left: auto; }
 }
+
+/* naslov »Posledice« nad obema stolpcema: seznam in ključna številka začneta v isti vrstici */
+.posbox { row-gap: 0; }
+.posbox__h { grid-column: 1 / -1; }
+@media (max-width: 900px) { .posbox .mx__num { margin-top: 24px; } }
