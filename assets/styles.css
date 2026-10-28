@@ -394,7 +394,9 @@ input[type="range"] { width: 100%; max-width: 460px; accent-color: var(--red); m
 }
 .measure__ic svg { width: 76px; height: 76px; }
 .measure__title { font-family: var(--display); font-stretch: 68%; font-weight: 900; text-transform: uppercase; font-size: clamp(30px, 3.6vw, 58px); line-height: .9; margin: 0 0 12px; transition: color .12s; }
-.measure__one { font-size: 18px; line-height: 1.45; color: var(--ink-2); max-width: 64ch; margin: 0; }
+/* opis ukrepa in razlaga: enaka velikost, razmik vrstic in širina */
+.measure__one, .mtext p { font-size: 18px; line-height: 1.5; max-width: 70ch; }
+.measure__one { color: var(--ink-2); margin: 0; }
 .measure__one + .measure__one { margin-top: 12px; }
 .measure__meta { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }
 .measure__toggle {
@@ -543,7 +545,7 @@ input[type="range"] { width: 100%; max-width: 460px; accent-color: var(--red); m
   .measure__side .measure__meta { flex-direction: row; flex-wrap: wrap; flex: 1 1 0; min-width: 0; gap: 8px 16px; }
   .measure__side .tag { white-space: normal; }
   .measure__body { padding: 0 0 32px; }
-  .measure__one { font-size: 17px; }
+  .measure__one, .mtext p { font-size: 17px; }
   .filters__end { margin-left: 0; width: 100%; justify-content: space-between; }
   .mtext__bad { font-size: 24px; }
   .measure__btn > span:nth-child(2) { grid-column: 1 / -1; grid-row: 2; }
@@ -614,10 +616,10 @@ input[type="range"] { width: 100%; max-width: 460px; accent-color: var(--red); m
 .pos-list__ic svg { width: 24px; height: 24px; }
 .pos-list b { display: block; font-family: var(--display); font-stretch: 75%; font-weight: 900; text-transform: uppercase; font-size: 19px; line-height: 1.1; margin-bottom: 4px; }
 .mx__num {
-  background: var(--red); border: 2px solid var(--ink); padding: 16px 24px; max-width: 320px;
-  display: flex; flex-direction: column; gap: 8px; font-size: 15px;
+  background: var(--red); border: 2px solid var(--ink); padding: 16px 24px; width: 300px;
+  display: flex; flex-direction: column; gap: 8px; font-size: 13px; line-height: 1.4;
 }
-.mx__num .d { font-size: clamp(48px, 5vw, 80px); }
+.mx__num .d { font-size: clamp(40px, 4vw, 60px); white-space: nowrap; }
 @media (max-width: 900px) {
   .mx { grid-template-columns: 1fr; }
   .mx__pos { grid-template-columns: 1fr; }
@@ -626,7 +628,7 @@ input[type="range"] { width: 100%; max-width: 460px; accent-color: var(--red); m
 
 /* opis ukrepa in "zakaj je to slabo" kot tekoče besedilo */
 .mtext { margin-bottom: 24px; }
-.mtext p, .mtext .mb-table { max-width: 78ch; }
+.mtext .mb-table { max-width: 70ch; }
 .measure__body > .clen { display: flex; margin-top: 24px; }
 .mtext p { margin: 0 0 12px; }
 .mtext .mb-table { margin-bottom: 14px; }
@@ -651,12 +653,13 @@ input[type="range"] { width: 100%; max-width: 460px; accent-color: var(--red); m
 
 /* posledice: samostojen okvir pod razlago */
 .posbox {
-  border: 2px solid var(--ink); background: var(--paper);
-  padding: 24px; margin-bottom: 24px;
+  border: 0; background: none;
+  padding: 0; margin-bottom: 24px;
   display: grid; grid-template-columns: 1fr auto; gap: 32px; align-items: start;
 }
 @media (max-width: 900px) {
-  .posbox { grid-template-columns: 1fr; padding: 16px; gap: 24px; }
+  .posbox { grid-template-columns: 1fr; padding: 0; gap: 24px; }
+  .mx__num { width: auto; }
 }
 
 /* ---------- posledice na vstopni strani ---------- */

@@ -64,19 +64,19 @@ ZZB.ukrepi = [
     stran: 6,
     kat: "slabo",
     skupine: ["zaposleni", "vsi"],
-    naslov: "Davčno darilo samo za plače nad 7.500 €",
+    naslov: "Davčno darilo samo za plače nad 7.500 €",
     uradno: "»Razvojna« oz. »socialna« kapica",
-    kratko: "Od dela plače nad 7.500 € bruto se ne plačujejo več prispevki za pokojnine, zdravstvo in oskrbo. Kdor zasluži manj, ne dobi ničesar.",
+    kratko: "Od dela plače nad 7.500 € bruto se ne plačujejo več prispevki za pokojnine, zdravstvo in oskrbo. Kdor zasluži manj, ne dobi ničesar.",
     kaj: [
-      "Najvišja osnova za vse socialne prispevke se omeji na 7.500 € bruto mesečne plače. Od zneska nad tem pragom se prispevki za pokojninsko, zdravstveno, starševsko in zaposlitveno blagajno ter dolgotrajno oskrbo ne obračunavajo več."
+      "Najvišja osnova za vse socialne prispevke se omeji na 7.500 € bruto mesečne plače. Od zneska nad tem pragom se prispevki za pokojninsko, zdravstveno, starševsko in zaposlitveno blagajno ter dolgotrajno oskrbo ne obračunavajo več."
     ],
     zakaj: [
-      "Čistilka na minimalni plači (1.277 €), medicinska sestra (1.900 €), inženir (3.500 €), zdravnik specialist (4.800 €) in celo poslanec (5.000 €) ne dobijo nič.",
-      "Korist dobi okoli 13.000 ljudi z najvišjimi plačami — 1,5 % zaposlenih. Predsednik uprave NLB (2025: 1,8 milijona € bruto) bi dobil okoli 16.000 € več neto na mesec, približno 200.000 € na leto."
+      "Čistilka na minimalni plači (1.277 €), medicinska sestra (1.900 €), inženir (3.500 €), zdravnik specialist (4.800 €) in celo poslanec (5.000 €) ne dobijo nič.",
+      "Korist dobi okoli 13.000 ljudi z najvišjimi plačami — 1,5 % zaposlenih. Predsednik uprave NLB (2025: 1,8 milijona € bruto) bi dobil okoli 16.000 € več neto na mesec, približno 200.000 € na leto."
     ],
     oni: "To je razvojni zakon, ne zakon za bogate.",
     oniKdo: "Peter Papež, državni sekretar",
-    resnica: "Za 98,5 % zaposlenih je učinek natanko 0 €. Ker pravice v zdravstvu niso vezane na vplačila, je kapica pri zdravstvu in oskrbi čista izguba za vse ostale.",
+    resnica: "Za 98,5 % zaposlenih je učinek natanko 0 €. Ker pravice v zdravstvu niso vezane na vplačila, je kapica pri zdravstvu in oskrbi čista izguba za vse ostale.",
     stevilka: "264 mio €",
     stevilkaOpis: "manj v blagajnah vsako leto (Fiskalni svet)"
   },
@@ -172,13 +172,13 @@ ZZB.ukrepi = [
     skupine: ["najemniki"],
     naslov: "Tvoja najemnina ostane ista. Najemodajalec zasluži več.",
     uradno: "Nižja dohodnina od oddajanja premoženja",
-    kratko: "Davek na najemnine pade s 25 % na 15 % (za mlade in družine na 5 %). Najemnine se zaradi tega ne bodo znižale.",
+    kratko: "Davek na najemnine pade s 25 % na 15 % (za mlade in družine na 5 %). Najemnine se zaradi tega ne bodo znižale.",
     kaj: [
-      "Davek na dohodek iz oddajanja nepremičnin se zniža s 25 % na 15 %. Pri dolgoročnem najemu za mlade do 30 let in družine z otroki se zniža na 5 %."
+      "Davek na dohodek iz oddajanja nepremičnin se zniža s 25 % na 15 %. Pri dolgoročnem najemu za mlade do 30 let in družine z otroki se zniža na 5 %."
     ],
     zakaj: [
       "Najemodajalci imajo na trgu premoč in najemnine dvigujejo ne glede na davek. Nižji davek ostane v njihovem žepu.",
-      "Primer: pri najemnini 700 € lastnik plača okoli 63 € manj davka na mesec. Najemnik plača enako kot prej.",
+      "Primer: pri najemnini 700 € lastnik plača okoli 63 € manj davka na mesec. Najemnik plača enako kot prej.",
       "Država izgubi vsaj 50 milijonov € na leto — denar, ki bi lahko šel za javna najemna stanovanja."
     ],
     oni: "Mladim prinaša pot do stanovanj.",
@@ -205,14 +205,14 @@ ZZB.ukrepi = [
       "Za leto 2027 kratkoročnega oddajanja stanovanj časovno ne omeji in ne uporablja uredbe o občinah z visokim tveganjem negativnih vplivov kratkoročnega najema. Soglasja sosedov za kratkoročni najem podaljša do konca leta 2027."
     ],
     zakaj: [
-      "Med 2015 in 2023 se je število ležišč na platformah skoraj popetorilo. V istem času so cene stanovanj zrasle za 102 %, najemnine za 73 %.",
-      "Najemnina enosobnega stanovanja v Ljubljani presega 50 % neto plače. Po merilih OECD in Eurostata ne bi smela preseči 30 %.",
+      "Med 2015 in 2023 se je število ležišč na platformah skoraj popetorilo. V istem času so cene stanovanj zrasle za 102 %, najemnine za 73 %.",
+      "Najemnina enosobnega stanovanja v Ljubljani presega 50 % neto plače. Po merilih OECD in Eurostata ne bi smela preseči 30 %.",
       "Za ta ukrep so lobirali lastniki Airbnb stanovanj."
     ],
     oni: "Ne smemo škoditi turizmu.",
     oniKdo: "tipičen argument zagovornikov",
     resnica: "Stanovanja so za ljudi, ki v mestu živijo in delajo. Regulacija bi že v 2027 vrnila stanovanja na najemni trg.",
-    stevilka: "+73 %",
+    stevilka: "+73 %",
     stevilkaOpis: "najemnine 2015–2023"
   },
   {
@@ -255,9 +255,9 @@ ZZB.ukrepi = [
     skupine: ["sp"],
     naslov: "Mikro s.p.: nižji prispevki danes, revna pokojnina jutri",
     uradno: "Nova kategorija »mikro s.p.«",
-    kratko: "Prispevki za s.p. z najnižjimi prihodki padejo s ~650 € na ~250 €. Zveni dobro, a spodbuja prisilne s.p.-je in pokojnine pod pragom revščine.",
+    kratko: "Prispevki za s.p. z najnižjimi prihodki padejo s ~650 € na ~250 €. Zveni dobro, a spodbuja prisilne s.p.-je in pokojnine pod pragom revščine.",
     kaj: [
-      "Za samozaposlene s prihodki pod letno minimalno plačo (okoli 18.000 €) je osnova za prispevke 45 % minimalne plače namesto 60 % povprečne. Mesečni prispevki padejo s približno 650 € na 250 €. Velja 24 mesecev."
+      "Za samozaposlene s prihodki pod letno minimalno plačo (okoli 18.000 €) je osnova za prispevke 45 % minimalne plače namesto 60 % povprečne. Mesečni prispevki padejo s približno 650 € na 250 €. Velja 24 mesecev."
     ],
     zakaj: [
       "Delodajalci dobijo nov razlog, da delavce potisnejo v s.p. namesto redne zaposlitve.",
@@ -267,7 +267,7 @@ ZZB.ukrepi = [
     oni: "Razbremenjujemo tiste, ki zaslužijo najmanj.",
     oniKdo: "predlagatelji",
     resnica: "Tistim z najnižjimi dohodki pomaga dostojna minimalna plača in redna zaposlitev, ne cenejša prekarnost.",
-    stevilka: "650 → 250 €",
+    stevilka: "650 → 250 €",
     stevilkaOpis: "prispevki na mesec — in nižja pokojnina"
   },
   {
@@ -278,17 +278,17 @@ ZZB.ukrepi = [
       { k: "pokojnine", t: "257 milijonov € na leto manj v pokojninski blagajni (Fiskalni svet)." }
     ],
     clen: "24. in 56. člen",
-    clenOpis: "nov 119.a člen Zakona o delovnih razmerjih; 100 % pokojnina: 15.–20. člen (nov 115.a člen ZPIZ-2)",
+    clenOpis: "nov 119.a člen Zakona o delovnih razmerjih; 100 % pokojnina: 15.–20. člen (nov 115.a člen ZPIZ-2)",
     stran: 10,
     kat: "zapleteno-slabo",
     skupine: ["zaposleni", "upokojenci"],
     naslov: "Izpolniš pogoje za upokojitev — izgubiš službo",
-    uradno: "Prenehanje pogodbe ob izpolnitvi pogojev + 100 % pokojnina ob delu",
+    uradno: "Prenehanje pogodbe ob izpolnitvi pogojev + 100 % pokojnina ob delu",
     kratko: "Ko izpolniš pogoje za pokojnino, ti pogodba preneha. Delaš lahko naprej le, če te delodajalec spet hoče — pod njegovimi pogoji.",
     kaj: [
       "Pogodba o zaposlitvi preneha veljati »po samem zakonu« na dan, ko delavec izpolni pogoje za starostno pokojnino. Delodajalec lahko to preveri v zbirkah ZPIZ.",
       "Delavec lahko najpozneje 90 dni prej pisno predlaga, da dela naprej. Delodajalec v 30 dneh predlog sprejme, ponudi spremenjeno ali novo pogodbo ali ga z »utemeljenimi razlogi« zavrne.",
-      "Kdor dela naprej, prejema 100 % pokojnine (zdaj 40 % prva tri leta, nato 20 %)."
+      "Kdor dela naprej, prejema 100 % pokojnine (zdaj 40 % prva tri leta, nato 20 %)."
     ],
     zakaj: [
       "Delo naprej je odvisno od volje delodajalca — ki lahko ponudi novo pogodbo z nižjo plačo in manj pravicami. Delavcu ostane le tožba na delovnem sodišču.",
@@ -306,7 +306,7 @@ ZZB.ukrepi = [
   {
     id: "normiranci",
     posledice: [
-      { k: "proracun", t: "Do 16.100 € davčnega odpustka na leto za najvišje prihodke." },
+      { k: "proracun", t: "Do 16.100 € davčnega odpustka na leto za najvišje prihodke." },
       { k: "prekarizacija", t: "Spodbuda za navidezno samozaposlovanje namesto redne zaposlitve." }
     ],
     clen: "2., 3. in 5.–13. člen",
@@ -314,30 +314,30 @@ ZZB.ukrepi = [
     stran: 2,
     kat: "zapleteno-slabo",
     skupine: ["sp"],
-    naslov: "Normiranci: odpustek šele nad 60.000 € prihodkov",
+    naslov: "Normiranci: odpustek šele nad 60.000 € prihodkov",
     uradno: "Nova lestvica normiranih odhodkov",
-    kratko: "Za veliko večino samozaposlenih se ne spremeni nič. Odpustki rastejo šele pri visokih prihodkih — do 16.100 € na leto.",
+    kratko: "Za veliko večino samozaposlenih se ne spremeni nič. Odpustki rastejo šele pri visokih prihodkih — do 16.100 € na leto.",
     kaj: [
-      "Priznani normirani odhodki: 80 % do 100.000 € prihodkov, 70 % do 120.000 €, 40 % do 150.000 €, nad tem 0 %. Meja za popoldanski s.p. je 70.000 €. Odpravljena je omejitev ponovnega vstopa med normirance."
+      "Priznani normirani odhodki: 80 % do 100.000 € prihodkov, 70 % do 120.000 €, 40 % do 150.000 €, nad tem 0 %. Meja za popoldanski s.p. je 70.000 €. Odpravljena je omejitev ponovnega vstopa med normirance."
     ],
     zakaj: [
       "Koristi dobro plačanim svetovalcem, IT strokovnjakom, odvetnikom in zdravnikom, ki si s.p. izberejo zaradi nižjih dajatev.",
       "Spodbuja navidezno samozaposlovanje in izčrpava pokojninsko in zdravstveno blagajno."
     ],
     tabela: [
-      ["30.000 €", "1.200 €", "1.200 €", "0 €"],
-      ["50.000 €", "2.000 €", "2.000 €", "0 €"],
-      ["60.000 €", "2.400 €", "2.400 €", "0 €"],
-      ["80.000 €", "6.400 €", "3.200 €", "3.200 €"],
-      ["100.000 €", "10.400 €", "4.000 €", "6.400 €"],
-      ["120.000 €", "14.400 €", "5.200 €", "9.200 €"],
-      ["150.000 €", "24.900 €", "8.800 €", "16.100 €"]
+      ["30.000 €", "1.200 €", "1.200 €", "0 €"],
+      ["50.000 €", "2.000 €", "2.000 €", "0 €"],
+      ["60.000 €", "2.400 €", "2.400 €", "0 €"],
+      ["80.000 €", "6.400 €", "3.200 €", "3.200 €"],
+      ["100.000 €", "10.400 €", "4.000 €", "6.400 €"],
+      ["120.000 €", "14.400 €", "5.200 €", "9.200 €"],
+      ["150.000 €", "24.900 €", "8.800 €", "16.100 €"]
     ],
     oni: "Razbremenjujemo male podjetnike.",
     oniKdo: "predlagatelji",
-    resnica: "Mali podjetnik z 50.000 € prihodkov dobi 0 €. Tisti s 150.000 € dobi 16.100 € na leto.",
-    stevilka: "−65 %",
-    stevilkaOpis: "davka pri 150.000 € prihodkov"
+    resnica: "Mali podjetnik z 50.000 € prihodkov dobi 0 €. Tisti s 150.000 € dobi 16.100 € na leto.",
+    stevilka: "−65 %",
+    stevilkaOpis: "davka pri 150.000 € prihodkov"
   },
   {
     id: "popoldanski",
@@ -354,7 +354,7 @@ ZZB.ukrepi = [
     kratko: "Popoldanski s.p. ne bodo več plačevali prispevka za dolgotrajno oskrbo. Znesek ni velik, načelo pa se ruši.",
     kaj: [
       "Prispevek za dolgotrajno oskrbo se ukine za dohodke iz dejavnosti, ki se opravlja kot postranski poklic (popoldanski s.p.).",
-      "Kdor je za posamezen mesec že plačal 2 % prispevka za oskrbo, ga od drugih dohodkov (npr. podjemne ali avtorske pogodbe) ne plača več."
+      "Kdor je za posamezen mesec že plačal 2 % prispevka za oskrbo, ga od drugih dohodkov (npr. podjemne ali avtorske pogodbe) ne plača več."
     ],
     zakaj: [
       "Ruši se načelo, da se prispevki plačujejo od vsakega dohodka, ne glede na obliko dela.",
@@ -376,19 +376,19 @@ ZZB.ukrepi = [
     stran: 10,
     kat: "zapleteno",
     skupine: ["upokojenci"],
-    naslov: "1 % višja pokojnina, manj denarja za oskrbo",
+    naslov: "1 % višja pokojnina, manj denarja za oskrbo",
     uradno: "Ukinitev prispevka za dolgotrajno oskrbo za upokojence",
-    kratko: "Pokojnine bodo višje za 1 %. A s tem zmanjka denarja za oskrbo, ki jo bodo najbolj potrebovali prav današnji upokojenci.",
+    kratko: "Pokojnine bodo višje za 1 %. A s tem zmanjka denarja za oskrbo, ki jo bodo najbolj potrebovali prav današnji upokojenci.",
     kaj: [
-      "Upokojenci ne bodo več plačevali prispevka za dolgotrajno oskrbo (1 % pokojnine)."
+      "Upokojenci ne bodo več plačevali prispevka za dolgotrajno oskrbo (1 % pokojnine)."
     ],
     zakaj: [
       "Sistem dolgotrajne oskrbe — nega na domu, dnevni centri, domovi za starejše — šele nastaja. Ukinitev vira takoj po začetku pomeni manj storitev ali odvisnost od vsakoletnega proračuna.",
-      "Pri pokojnini 900 € je to 9 € na mesec. Ura oskrbe na domu stane več."
+      "Pri pokojnini 900 € je to 9 € na mesec. Ura oskrbe na domu stane več."
     ],
     oni: "Višje pokojnine za vse upokojence.",
     oniKdo: "koalicija",
-    resnica: "9 € danes, a manj oskrbe takrat, ko jo boš potreboval_a.",
+    resnica: "9 € danes, a manj oskrbe takrat, ko jo boš potreboval_a.",
     stevilka: "94 mio €",
     stevilkaOpis: "manj za dolgotrajno oskrbo (ocena sindikatov, cel zakon)"
   },
@@ -403,11 +403,11 @@ ZZB.ukrepi = [
     kat: "dobro-ce",
     skupine: ["vsi"],
     naslov: "Nižji DDV na hrano — a kdo bo poskrbel, da bodo cene res nižje?",
-    uradno: "5 % DDV na osnovna živila, začasno 9,5 % na energente",
+    uradno: "5 % DDV na osnovna živila, začasno 9,5 % na energente",
     kratko: "Nižji DDV na 15 osnovnih živil in začasno na energijo. Dober namen, a brez nadzora cen denar konča pri trgovcih.",
     kaj: [
-      "DDV se zniža na 5 % za 15 skupin osnovnih živil (kruh, testenine, meso, mleko, jajca, sveže sadje in zelenjava, sladkor …) in kmetijske surovine.",
-      "Za največ 9 mesecev lahko vlada s sklepom zniža DDV na 9,5 % za elektriko, zemeljski plin, daljinsko ogrevanje in drva."
+      "DDV se zniža na 5 % za 15 skupin osnovnih živil (kruh, testenine, meso, mleko, jajca, sveže sadje in zelenjava, sladkor …) in kmetijske surovine.",
+      "Za največ 9 mesecev lahko vlada s sklepom zniža DDV na 9,5 % za elektriko, zemeljski plin, daljinsko ogrevanje in drva."
     ],
     zakaj: [
       "Nižji DDV na energijo ni samodejen: zakon vladi to le dovoljuje.",
@@ -418,7 +418,7 @@ ZZB.ukrepi = [
     oni: "Zakon vsem nekaj da in nikomur nič ne vzame.",
     oniKdo: "NSi–SLS–Fokus, Resni.ca",
     resnica: "Za nižji DDV smo — z mehanizmom, ki zagotovi, da se cene res znižajo. Tak zakon bomo vložili s podpisi volivcev.",
-    stevilka: "5 %",
+    stevilka: "5 %",
     stevilkaOpis: "DDV — če trgovci znižajo cene"
   }
 ];
@@ -426,8 +426,8 @@ ZZB.ukrepi = [
 /* ---------- ARGUMENTARIJ (za pogovore) ---------- */
 ZZB.miti = [
   { oni: "Vsem nekaj da, nikomur nič ne vzame.", kdo: "predlagatelji", mi: "Fiskalni svet: 1,2 milijarde € luknje že prvo leto. Plačali jo bomo z daljšimi vrstami, nižjimi pokojninami in manj oskrbe." },
-  { oni: "To je razvojni zakon, ne zakon za bogate.", kdo: "vlada", mi: "Osrednji ukrep koristi 1,5 % zaposlenih. Za vse ostale prinaša 0 €." },
-  { oni: "Rast bo pokrila izpad.", kdo: "predlagatelji", mi: "Fiskalni svet: rast pokrije četrtino takoj in polovico v desetih letih. Javni dolg je čez 10 let višji za 8 % BDP." },
+  { oni: "To je razvojni zakon, ne zakon za bogate.", kdo: "vlada", mi: "Osrednji ukrep koristi 1,5 % zaposlenih. Za vse ostale prinaša 0 €." },
+  { oni: "Rast bo pokrila izpad.", kdo: "predlagatelji", mi: "Fiskalni svet: rast pokrije četrtino takoj in polovico v desetih letih. Javni dolg je čez 10 let višji za 8 % BDP." },
   { oni: "Mladim prinaša pot do stanovanj.", kdo: "koalicija", mi: "Nižji davek dobi lastnik, Airbnb ostane neomejen. Najemnine ne padejo." },
   { oni: "Zdravniki bodo lahko delali več, vrste bodo krajše.", kdo: "koalicija", mi: "To smo že imeli. 2022–2024: rekordni dobički zasebnikov, daljše vrste." },
   { oni: "Upokojenci dobijo polno plačo in pokojnino.", kdo: "koalicija", mi: "Najprej jim pogodba avtomatsko preneha. Naprej delajo le, če jih delodajalec hoče." },
@@ -441,8 +441,8 @@ ZZB.miti = [
    Brez "src" se prikaže tipografski predogled. */
 ZZB.grafike = [
   { naslov: "Ta zakon ni napisan zate", tema: "splosno", barva: "red",   velik: "Ta zakon ni napisan zate.", mali: "6. 12. glasuj PROTI", src: "" },
-  { naslov: "0 € za 98,5 %",             tema: "kapica",  barva: "ink",   velik: "0 €",                        mali: "Toliko ti prinese razvojna kapica, če zaslužiš manj kot 7.500 € bruto.", src: "" },
-  { naslov: "Najemnina ostane ista",     tema: "stanovanja", barva: "paper", velik: "Tvoja najemnina: ista.", mali: "Davek tvojega najemodajalca: −40 %.", src: "" },
+  { naslov: "0 € za 98,5 %",             tema: "kapica",  barva: "ink",   velik: "0 €",                        mali: "Toliko ti prinese razvojna kapica, če zaslužiš manj kot 7.500 € bruto.", src: "" },
+  { naslov: "Najemnina ostane ista",     tema: "stanovanja", barva: "paper", velik: "Tvoja najemnina: ista.", mali: "Davek tvojega najemodajalca: −40 %.", src: "" },
   { naslov: "1,2 milijarde",            tema: "splosno", barva: "gold",  velik: "1,2 mrd €",                  mali: "luknje v javnih financah prvo leto — Fiskalni svet", src: "" },
   { naslov: "Čakaš ti, zasluži zasebnik", tema: "zdravstvo", barva: "red", velik: "Čakaš ti.",                 mali: "Zasluži zasebnik. Zakon vrača zdravnike dvoživke.", src: "" },
   { naslov: "Pogoji za upokojitev",      tema: "delo",    barva: "ink",   velik: "Izpolniš pogoje? Ostaneš brez službe.", mali: "Interventni zakon, člen o upokojevanju", src: "" }
@@ -467,5 +467,5 @@ ZZB.instagram = [
   { url: "#", poster: "", opis: "Vprašali smo najemnike v Ljubljani" },
   { url: "#", poster: "", opis: "Zdravnica razloži dvoživkarstvo v 60 sekundah" },
   { url: "#", poster: "", opis: "Kako glasuješ 6. decembra" },
-  { url: "#", poster: "", opis: "»Mi tega ne rabimo« — ljudje s plačo nad 7.500 €" }
+  { url: "#", poster: "", opis: "»Mi tega ne rabimo« — ljudje s plačo nad 7.500 €" }
 ];
