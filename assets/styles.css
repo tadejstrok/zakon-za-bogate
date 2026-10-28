@@ -375,7 +375,7 @@ input[type="range"] { width: 100%; max-width: 460px; accent-color: var(--red); m
 .measure { border-bottom: 2px solid var(--ink); scroll-margin-top: 240px; }
 .measure__btn {
   width: 100%; background: none; border: 0; cursor: pointer; text-align: left;
-  display: grid; grid-template-columns: 168px 1fr auto; gap: 28px; align-items: start;
+  display: grid; grid-template-columns: 168px 1fr; gap: 28px; align-items: start;
   padding: 32px 0;
 }
 .measure__side { display: flex; flex-direction: column; gap: 16px; align-items: flex-start; }
@@ -404,7 +404,7 @@ input[type="range"] { width: 100%; max-width: 460px; accent-color: var(--red); m
 .measure__toggle::before { content: "+"; line-height: 1; }
 .measure.open .measure__toggle { background: var(--ink); color: var(--paper); }
 .measure.open .measure__toggle::before { content: "−"; }
-.measure__body { display: none; padding: 0 80px 32px 196px; }
+.measure__body { display: none; padding: 0 0 32px 196px; }
 .clen {
   display: inline-flex; gap: 10px; align-items: flex-start;
   margin: 16px 0 0; padding: 12px 16px;
@@ -538,17 +538,15 @@ input[type="range"] { width: 100%; max-width: 460px; accent-color: var(--red); m
   .mb-cell + .mb-cell { border-left: 0; border-top: 2px solid var(--ink); }
   .measure__ic { width: 72px; height: 72px; box-shadow: 4px 4px 0 var(--ink); }
   .measure__ic svg { width: 44px; height: 44px; }
-  .measure__btn { grid-template-columns: 1fr auto; gap: 16px; align-items: start; }
+  .measure__btn { grid-template-columns: 1fr; gap: 16px; align-items: start; }
   .measure__side { flex-direction: row; align-items: flex-start; gap: 12px; min-width: 0; }
   .measure__side .measure__meta { flex-direction: row; flex-wrap: wrap; flex: 1 1 0; min-width: 0; gap: 8px 16px; }
   .measure__side .tag { white-space: normal; }
-  .measure__toggle { width: 44px; height: 44px; font-size: 28px; }
   .measure__body { padding: 0 0 32px; }
   .measure__one { font-size: 17px; }
   .filters__end { margin-left: 0; width: 100%; justify-content: space-between; }
   .mtext__bad { font-size: 24px; }
   .measure__btn > span:nth-child(2) { grid-column: 1 / -1; grid-row: 2; }
-  .measure__toggle { grid-column: 2; grid-row: 1; justify-self: end; }
   .page-hero__grid { grid-template-columns: 1fr; }
   .filters__lbl { width: 100%; }
   .filters .chips { flex: 1 1 100%; min-width: 0; flex-wrap: nowrap; overflow-x: auto; padding: 0 0 4px; scrollbar-width: none; }
@@ -574,6 +572,7 @@ input[type="range"] { width: 100%; max-width: 460px; accent-color: var(--red); m
 @media (prefers-reduced-motion: reduce) {
   .ticker__track { animation: none; }
   * { transition: none !important; }
+  .mtext__bad svg { animation: none !important; }
 }
 
 /* ---------- razlaga ukrepa: enotni okvirji ---------- */
@@ -632,13 +631,20 @@ input[type="range"] { width: 100%; max-width: 460px; accent-color: var(--red); m
 .mtext p { margin: 0 0 12px; }
 .mtext .mb-table { margin-bottom: 14px; }
 .mtext__bad {
-  display: flex; align-items: flex-start; gap: 12px; margin: 0 0 14px;
+  display: block; margin: 0 0 14px;
   font-family: var(--display); font-stretch: 70%; font-weight: 900;
   text-transform: uppercase; font-size: 34px; line-height: .95; color: var(--red);
 }
-.mtext__bad svg { width: 30px; height: 30px; flex: none; margin-top: -2px; transition: transform .2s ease; }
-/* kazalec: ob prehodu in pri odprtem ukrepu kaže navzdol */
-.measure__btn:hover .mtext__bad svg, .measure.open .mtext__bad svg { transform: rotate(90deg); }
+.mtext__end { white-space: nowrap; }
+.mtext__bad svg {
+  display: inline-block; width: .9em; height: .9em; vertical-align: -.08em; margin-left: .15em;
+  transition: rotate .3s ease;
+}
+/* kazalec: ob prehodu z miško poskakuje levo-desno, pri odprtem ukrepu kaže navzdol.
+   Zamik animacije počaka, da se ob zapiranju kazalec najprej zavrti nazaj. */
+@keyframes kazalec { 0%, 100% { translate: 0 0; } 50% { translate: .2em 0; } }
+.measure:not(.open) .measure__btn:hover .mtext__bad svg { animation: kazalec .7s ease-in-out .3s infinite; }
+.measure.open .mtext__bad svg { rotate: 90deg; }
 
 /* naslov učinka s palcem v glavi ukrepa (viden tudi zaprt) */
 .measure__btn .mtext__bad { margin: 16px 0 0; }

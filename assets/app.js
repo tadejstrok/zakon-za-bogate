@@ -196,6 +196,11 @@
         <a class="btn btn--sm btn--paper" href="${esc(ZZB.zakon.dz)}" target="_blank" rel="noopener">Stran DZ →</a>
       </div>`;
 
+    // udarni naslov: kazalec stoji za zadnjo besedo in se z njo ne loči v novo vrstico
+    const badTitle = (t) => {
+      const w = t.trim().split(" "), last = w.pop();
+      return `${esc(w.join(" "))} <span class="mtext__end">${esc(last)} ${IC.palec || ""}</span>`;
+    };
     const groupTag = (s) => `<span class="tag tag--grp">${IC.skupine[s] || ""}${ZZB.skupine[s]}</span>`;
     const posIc = (k) => (IC.posledice || {})[k] || "";
     list.innerHTML = ZZB.ukrepi.map((u) => `
@@ -208,9 +213,8 @@
           <span>
             <h3 class="measure__title">${esc(u.uradno)}</h3>
             ${u.kaj.map((p) => `<p class="measure__one">${esc(p)}</p>`).join("")}
-            <span class="mtext__bad">${IC.palec || ""}<span>${esc(u.naslov)}</span></span>
+            <span class="mtext__bad">${badTitle(u.naslov)}</span>
           </span>
-          <span class="measure__toggle" aria-hidden="true"></span>
         </button>
         <div class="measure__body" id="${u.id}-body">
           <div class="mtext">
