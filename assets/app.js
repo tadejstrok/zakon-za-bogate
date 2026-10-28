@@ -216,7 +216,6 @@
           <div class="mtext">
             ${u.zakaj.map((p) => `<p>${esc(p)}</p>`).join("")}
             ${u.tabela ? `<table class="mb-table"><thead><tr><th>Prihodki</th><th>Davek zdaj</th><th>Po zakonu</th><th>Odpustek</th></tr></thead><tbody>${u.tabela.map((r) => `<tr>${r.map((c) => `<td>${c}</td>`).join("")}</tr>`).join("")}</tbody></table>` : ""}
-            ${u.clen ? `<a class="clen" href="${pdfAt(u.stran)}" target="_blank" rel="noopener"><span class="clen__ic">${IC.clen}</span><span><b>${esc(u.clen)} ZIURS</b> · ${esc(u.clenOpis)} →</span></a>` : ""}
           </div>
           <section class="posbox">
             <div>
@@ -237,6 +236,7 @@
               <p>${esc(u.resnica)}</p>
             </section>
           </div>
+          ${u.clen ? `<a class="clen" href="${pdfAt(u.stran)}" target="_blank" rel="noopener"><span class="clen__ic">${IC.clen}</span><span><b>${esc(u.clen)} ZIURS</b> · ${esc(u.clenOpis)} →</span></a>` : ""}
         </div>
       </article>`).join("");
 
@@ -279,6 +279,9 @@
       });
       $("#fCount").textContent = n + " / " + ZZB.ukrepi.length + " ukrepov";
       $("#fReset").classList.toggle("hidden", !(p || k || s));
+      const active = [p, k, s].filter(Boolean).length;
+      $("#fActive").textContent = active;
+      $("#fActive").classList.toggle("hidden", !active);
       $("#measuresEmpty").classList.toggle("hidden", n > 0);
     };
     const reset = () => {
@@ -296,11 +299,20 @@
     $("#fReset").addEventListener("click", () => { reset(); toListTop(); });
     $("#fReset2").addEventListener("click", () => { reset(); toListTop(); });
     document.addEventListener("change", (e) => { if (["fp", "fk", "fs"].includes(e.target.name)) { apply(); toListTop(); } });
+    // prikaz/skrivanje filtrov (privzeto skriti)
+    const setOpen = (open) => {
+      $("#filters").classList.toggle("is-collapsed", !open);
+      $("#fToggle").setAttribute("aria-expanded", open);
+      $("#fToggleLbl").textContent = open ? "Skrij filtre" : "Pokaži filtre";
+    };
+    $("#fToggle").addEventListener("click", () => setOpen($("#filters").classList.contains("is-collapsed")));
+
     // povezava ?posledica=… (npr. z vstopne strani) vnaprej izbere filter
     const pre = new URLSearchParams(location.search).get("posledica");
     const preInput = pre && $(`[name="fp"][value="${CSS.escape(pre)}"]`);
     if (preInput) {
       preInput.checked = true;
+      setOpen(true);
       // po nalaganju skoči na filtre (setTimeout, da ga ne povozi obnovitev položaja brskalnika)
       const top = () => $(".filters").getBoundingClientRect().top + window.scrollY - $(".header").offsetHeight;
       window.addEventListener("load", () => setTimeout(() => window.scrollTo({ top: top(), behavior: "instant" }), 0));

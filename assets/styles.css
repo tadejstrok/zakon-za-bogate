@@ -628,7 +628,7 @@ input[type="range"] { width: 100%; max-width: 460px; accent-color: var(--red); m
 /* opis ukrepa in "zakaj je to slabo" kot tekoče besedilo */
 .mtext { margin-bottom: 24px; }
 .mtext p, .mtext .mb-table { max-width: 78ch; }
-.mtext .clen { display: flex; }
+.measure__body > .clen { display: flex; margin-top: 24px; }
 .mtext p { margin: 0 0 12px; }
 .mtext .mb-table { margin-bottom: 14px; }
 .mtext__bad {
@@ -679,4 +679,24 @@ input[type="range"] { width: 100%; max-width: 460px; accent-color: var(--red); m
   .pgrid { grid-template-columns: 1fr; }
   .pcard { min-height: 0; padding: 16px; }
   .pcard__t { font-size: 28px; }
+}
+
+/* ---------- prikaz/skrivanje filtrov ---------- */
+.filters__bar { display: flex; align-items: center; gap: 16px; }
+.filters__toggle {
+  display: inline-flex; align-items: center; gap: 8px; cursor: pointer;
+  background: var(--paper); border: 2px solid var(--ink); padding: 6px 12px;
+  font-family: var(--display); font-stretch: 80%; font-weight: 800; font-size: 15px;
+  text-transform: uppercase; letter-spacing: .02em;
+}
+.filters__toggle svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: square; }
+.filters__toggle:hover, .filters__toggle[aria-expanded="true"] { background: var(--ink); color: var(--paper); }
+.filters__badge {
+  min-width: 20px; height: 20px; padding: 0 6px; display: inline-grid; place-items: center;
+  background: var(--red); color: var(--paper); font-family: var(--mono); font-size: 11px; font-weight: 700;
+}
+.filters__panel { margin-top: 12px; }
+.filters.is-collapsed .filters__panel { display: none; }
+@media (max-width: 900px) {
+  .filters__bar .filters__end { width: auto; margin-left: auto; }
 }

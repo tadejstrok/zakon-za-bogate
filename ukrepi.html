@@ -25,22 +25,31 @@
     </div>
   </section>
 
-  <div class="filters">
-    <div class="wrap filters__row">
-      <span class="mono filters__lbl">Posledice</span>
-      <div class="chips" id="fPos"></div>
-    </div>
-    <div class="wrap filters__row">
-      <span class="mono filters__lbl">Ocena</span>
-      <div class="chips" id="fKat"></div>
-    </div>
-    <div class="wrap filters__row">
-      <span class="mono filters__lbl">Koga zadene</span>
-      <div class="chips" id="fSk"></div>
+  <div class="filters is-collapsed" id="filters">
+    <div class="wrap filters__bar">
+      <button class="filters__toggle" id="fToggle" type="button" aria-expanded="false" aria-controls="filtersPanel">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18M6 12h12M10 19h4"/></svg>
+        <span id="fToggleLbl">Pokaži filtre</span>
+        <span class="filters__badge hidden" id="fActive"></span>
+      </button>
       <span class="filters__end">
         <button class="filters__reset hidden" id="fReset" type="button">Počisti filtre</button>
         <span class="mono" id="fCount"></span>
       </span>
+    </div>
+    <div class="filters__panel" id="filtersPanel">
+      <div class="wrap filters__row">
+        <span class="mono filters__lbl">Posledice</span>
+        <div class="chips" id="fPos"></div>
+      </div>
+      <div class="wrap filters__row">
+        <span class="mono filters__lbl">Ocena</span>
+        <div class="chips" id="fKat"></div>
+      </div>
+      <div class="wrap filters__row">
+        <span class="mono filters__lbl">Koga zadene</span>
+        <div class="chips" id="fSk"></div>
+      </div>
     </div>
   </div>
 
