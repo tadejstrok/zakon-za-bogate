@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="sl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aktiviraj se — Zakon za bogate</title>
+  <meta name="description" content="Kako lahko pomagaš ustaviti zakon za bogate na referendumu 6. decembra.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="aktiviraj">
+  <div id="header"></div>
+
+  <section class="page-hero">
+    <div class="wrap">
+      <span class="eyebrow">Aktiviraj se</span>
+      <h1 class="d d-xl">340.000<br><span class="red">glasov.</span></h1>
+      <p class="lead">Toliko glasov PROTI potrebujemo, da zakon pade. Do 6. decembra ostaja <b><span data-countdown>42</span> dni</b>. Tukaj je pet načinov, kako pomagaš.</p>
+    </div>
+  </section>
+
+  <div class="wrap steps">
+
+    <section class="step" id="glasuj">
+      <div><span class="step__n">01</span><h2 class="d d-m">Glasuj proti</h2></div>
+      <div>
+        <p class="lead" style="margin-top:0">Na glasovnici bo vprašanje: <i>»Ali ste za to, da se uveljavi Zakon o interventnih ukrepih za razvoj Slovenije …?«</i> Obkroži <b>PROTI</b>.</p>
+        <div class="vote-box" aria-label="Obkroži PROTI">
+          <div><span class="x"></span>Za</div>
+          <div class="on"><span class="x">✕</span>Proti</div>
+        </div>
+        <p>Zakon pade, če proti glasuje večina tistih, ki glasujejo, <b>in</b> vsaj petina vseh volivcev. Zato ni dovolj, da imamo prav — priti moramo na volišče.</p>
+        <p><b>Ne moreš 6. decembra?</b> Glasuješ lahko predčasno ali po pošti. Datume in roke objavi Državna volilna komisija.</p>
+        <a class="btn btn--paper" href="https://www.dvk-rs.si" target="_blank" rel="noopener">Državna volilna komisija →</a>
+      </div>
+    </section>
+
+    <section class="step" id="pripelji">
+      <div><span class="step__n">02</span><h2 class="d d-m">Pripelji še tri</h2></div>
+      <div>
+        <p class="lead" style="margin-top:0">Vsak, ki pride, naj pripelje še tri: sodelavko, soseda, mamo. Obljubi in pošljemo ti opomnik dan pred referendumom.</p>
+        <form class="pledge" data-proto="Hvala! (Prototip — obrazec še ni povezan.)">
+          <input type="email" placeholder="tvoj e-naslov" aria-label="E-naslov" required>
+          <button class="btn btn--red" type="submit">Obljubim</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="step" id="grafike">
+      <div><span class="step__n">03</span><h2 class="d d-m">Deli grafike</h2>
+        <p>Prenesi in objavi na Instagramu, Facebooku ali v skupinah na WhatsAppu. Formati za objavo in zgodbe.</p></div>
+      <div>
+        <div class="gallery-filter chips" id="galleryFilter"></div>
+        <div class="gallery" id="gallery"></div>
+      </div>
+    </section>
+
+    <section class="step" id="pogovori">
+      <div><span class="step__n">04</span><h2 class="d d-m">Pogovori se</h2>
+        <p>Zagovorniki zakona ponavljajo nekaj stavkov. Tukaj so odgovori — za kosilo pri starših, kavo s sodelavci in komentarje na spletu.</p>
+        <a class="btn btn--paper" href="ukrepi.html">Vsi ukrepi →</a></div>
+      <div><div class="args" id="args"></div></div>
+    </section>
+
+    <section class="step" id="prostovoljci">
+      <div><span class="step__n">05</span><h2 class="d d-m">Postani prostovoljec_ka</h2>
+        <p>Stojnice, deljenje letakov, klici, prevozi na volišče, oblikovanje, video. Vsaka ura pomaga.</p></div>
+      <div>
+        <form class="form-grid" data-proto="Hvala! Oglasimo se kmalu. (Prototip — obrazec še ni povezan.)">
+          <div><label for="ime">Ime</label><input id="ime" required></div>
+          <div><label for="kraj">Kraj</label><input id="kraj"></div>
+          <div><label for="mail">E-naslov</label><input id="mail" type="email" required></div>
+          <div><label for="tel">Telefon</label><input id="tel" type="tel"></div>
+          <div class="full"><label>Kaj bi rad_a počel_a?</label>
+            <div class="chips">
+              <label class="chip"><input type="checkbox"><span>Stojnice</span></label>
+              <label class="chip"><input type="checkbox"><span>Letaki od vrat do vrat</span></label>
+              <label class="chip"><input type="checkbox"><span>Klici</span></label>
+              <label class="chip"><input type="checkbox"><span>Prevozi na volišče</span></label>
+              <label class="chip"><input type="checkbox"><span>Video / oblikovanje</span></label>
+              <label class="chip"><input type="checkbox"><span>Družbena omrežja</span></label>
+            </div></div>
+          <div class="full"><button class="btn btn--red" type="submit">Pridružim se</button></div>
+        </form>
+      </div>
+    </section>
+
+  </div>
+
+  <section class="section section--ink on-dark">
+    <div class="wrap" style="display:flex;justify-content:space-between;align-items:end;gap:32px;flex-wrap:wrap">
+      <h2 class="d d-l">Raje v živo?</h2>
+      <a class="btn btn--red" href="dogodki.html">Dogodki v tvoji bližini →</a>
+    </div>
+  </section>
+
+  <div id="footer"></div>
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

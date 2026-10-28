@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="sl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Zakon za bogate — 6. decembra glasuj PROTI</title>
+  <meta name="description" content="Kaj zakon o interventnih ukrepih za razvoj Slovenije prinaša tebi? Preveri v 30 sekundah.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="domov">
+  <div id="header"></div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <p class="hero__official">Zakon o interventnih ukrepih za <span class="strike">razvoj Slovenije</span></p>
+      <h1 class="d d-xxl hero__title">
+        <span class="line">Zakon</span>
+        <span class="line">za <span class="red">bogate</span></span>
+      </h1>
+      <div class="hero__grid">
+        <p class="lead">Davčna darila za 1,5&nbsp;% najbolje plačanih. Luknjo v višini 1,2&nbsp;milijarde evrov plačamo vsi ostali — z daljšimi čakalnimi vrstami, višjimi najemninami in nižjimi pokojninami.</p>
+        <div class="countdown">
+          <span class="countdown__num" data-countdown>42</span>
+          <div class="countdown__txt"><strong>dni do referenduma</strong><span class="mono">Nedelja, 6. december 2026</span></div>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="stat"><span class="stat__num">1,2 mrd €</span><span class="stat__lbl">luknje v javnih financah že prvo leto</span><span class="stat__src mono">Fiskalni svet</span></div>
+        <div class="stat"><span class="stat__num">0 €</span><span class="stat__lbl">prinese osrednji ukrep vsem s plačo pod 7.500 € bruto</span><span class="stat__src mono">Razvojna kapica</span></div>
+        <div class="stat"><span class="stat__num">13.000</span><span class="stat__lbl">ljudi, ki jim kapica res koristi — 1,5 % zaposlenih</span><span class="stat__src mono">ZZZS, Fiskalni svet</span></div>
+        <div class="stat"><span class="stat__num red">340.000</span><span class="stat__lbl">glasov PROTI potrebujemo, da zakon pade</span><span class="stat__src mono">⅕ vseh volivcev</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONFIGURATOR -->
+  <section class="section section--ink on-dark" id="preveri">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Konfigurator</span>
+          <h2 class="d d-xl">Preveri, kaj zakon<br>prinaša <span class="red">zate.</span></h2>
+        </div>
+        <p class="lead" style="color:#C9C4B8">Odgovori na nekaj vprašanj. Izračun je ocena na podlagi besedila zakona in podatkov Fiskalnega sveta.</p>
+      </div>
+
+      <div class="config" id="config">
+        <form onsubmit="return false">
+          <div class="field">
+            <span class="field__label">Kaj delaš?</span>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="status" value="zaposlen" checked><span>Zaposlen_a</span></label>
+              <label class="chip"><input type="radio" name="status" value="normiranec"><span>S.p. (normiranec)</span></label>
+              <label class="chip"><input type="radio" name="status" value="popoldanski"><span>Popoldanski s.p.</span></label>
+              <label class="chip"><input type="radio" name="status" value="upokojenec"><span>Upokojen_a</span></label>
+              <label class="chip"><input type="radio" name="status" value="student"><span>Študent_ka</span></label>
+            </div>
+          </div>
+
+          <div class="field" data-show="status:zaposlen">
+            <label class="field__label" for="placa">Tvoja bruto plača</label>
+            <div class="money"><input id="placa" class="fmt" inputmode="numeric" value="2.100"><em>€ / mesec</em></div>
+            <input type="range" min="1000" max="30000" step="100" value="2100" data-for="placa" aria-label="Bruto plača">
+            <p class="hint">Povprečna bruto plača v Sloveniji je okoli 2.600 €.</p>
+          </div>
+          <div class="field hidden" data-show="status:normiranec">
+            <label class="field__label" for="prihodki">Letni prihodki s.p.</label>
+            <div class="money"><input id="prihodki" class="fmt" inputmode="numeric" value="35.000"><em>€ / leto</em></div>
+            <input type="range" min="5000" max="200000" step="1000" value="35000" data-for="prihodki" aria-label="Letni prihodki">
+          </div>
+          <div class="field hidden" data-show="status:upokojenec">
+            <label class="field__label" for="pokojnina">Tvoja pokojnina</label>
+            <div class="money"><input id="pokojnina" class="fmt" inputmode="numeric" value="900"><em>€ / mesec</em></div>
+            <input type="range" min="300" max="3500" step="10" value="900" data-for="pokojnina" aria-label="Pokojnina">
+          </div>
+
+          <div class="field">
+            <span class="field__label">Kje živiš?</span>
+            <div class="chips">
+              <label class="chip"><input type="radio" name="dom" value="najemnik" checked><span>V najemu</span></label>
+              <label class="chip"><input type="radio" name="dom" value="lastnik"><span>V svojem</span></label>
+              <label class="chip"><input type="radio" name="dom" value="starsi"><span>Pri starših</span></label>
+              <label class="chip"><input type="radio" name="dom" value="oddajam"><span>Stanovanje oddajam</span></label>
+            </div>
+          </div>
+          <div class="field" data-show="dom:najemnik,oddajam">
+            <label class="field__label" for="najemnina">Najemnina</label>
+            <div class="money"><input id="najemnina" class="fmt" inputmode="numeric" value="700"><em>€ / mesec</em></div>
+            <input type="range" min="200" max="2500" step="10" value="700" data-for="najemnina" aria-label="Najemnina">
+          </div>
+
+          <div class="field">
+            <span class="field__label">Kaj še velja zate?</span>
+            <div class="chips">
+              <label class="chip"><input type="checkbox" id="c-zdr" checked><span>Hodim k zdravniku</span></label>
+              <label class="chip"><input type="checkbox" id="c-upok"><span>Imam (skoraj) pogoje za upokojitev</span></label>
+              <label class="chip"><input type="checkbox" id="c-nevarno"><span>Delam fizično / nevarno delo</span></label>
+              <label class="chip"><input type="checkbox" id="c-oskrba"><span>Skrbim za starše ali bližnje</span></label>
+            </div>
+          </div>
+        </form>
+
+        <aside class="receipt" aria-live="polite">
+          <div class="receipt__head">
+            <p class="d">Tvoj račun</p>
+            <span>ZAKON ZA BOGATE d.o.o. · ZIURS</span>
+          </div>
+          <div id="receiptRows"></div>
+          <div class="receipt__total">
+            <div><b>ZAKON TI PRINESE</b><br><small style="color:var(--muted)">neto na mesec</small></div>
+            <span class="d" id="receiptTotal">0 €</span>
+          </div>
+          <div class="receipt__vs">
+            <span>Direktor s plačo<br>50.000 € bruto dobi:</span>
+            <span class="d" id="receiptVsVal">+4.696 €</span>
+          </div>
+          <p class="receipt__foot">Ocena. Kapica: (bruto − 7.500 €) × 22,1 % prispevkov delavca × 50 % dohodnine. Najemnine: 10 odstotnih točk nižji davek na 90 % najemnine. Normiranci: tabela iz analize zakona.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- UKREPI -->
+  <section class="section">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Spoznaj ukrepe</span>
+          <h2 class="d d-l">13 ukrepov.<br>Eno sporočilo.</h2>
+        </div>
+        <a class="btn" href="ukrepi.html">Vsi ukrepi →</a>
+      </div>
+      <div class="teaser" id="teaser"></div>
+    </div>
+  </section>
+
+  <!-- INSTAGRAM -->
+  <section class="section section--ink on-dark">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="eyebrow">Zadnji videi</span>
+          <h2 class="d d-l">Na Instagramu</h2>
+        </div>
+        <a class="btn btn--paper" href="#">@zakonzabogate →</a>
+      </div>
+      <div class="reels" id="reels"></div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section section--red cta-band">
+    <div class="wrap">
+      <span class="eyebrow">Nedelja, 6. december</span>
+      <h2 class="d d-xl">Na referendumu<br>obkroži</h2>
+      <div class="vote-box" aria-label="Na glasovnici obkroži PROTI">
+        <div><span class="x"></span>Za</div>
+        <div class="on"><span class="x">✕</span>Proti</div>
+      </div>
+      <p class="lead" style="margin-bottom:30px">Zakon pade, če proti glasuje večina volivcev in vsaj petina vseh volivcev — okoli 340.000 ljudi. Zato šteje vsak glas.</p>
+      <a class="btn" href="aktiviraj.html">Aktiviraj se →</a>
+    </div>
+  </section>
+
+  <div id="footer"></div>
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

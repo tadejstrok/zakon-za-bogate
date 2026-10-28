@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="sl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spoznaj ukrepe — Zakon za bogate</title>
+  <meta name="description" content="Vseh 13 ukrepov interventnega zakona: kaj prinašajo, zakaj so slabi in kaj o njih trdi druga stran.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body data-page="ukrepi">
+  <div id="header"></div>
+
+  <section class="page-hero">
+    <div class="wrap page-hero__grid">
+      <div>
+        <span class="eyebrow">Spoznaj ukrepe</span>
+        <h1 class="d d-xl">Kaj prinaša<br><span class="red">zakon</span></h1>
+        <p class="lead">Zakon posega v deset zakonov naenkrat. Tukaj je vsak ukrep posebej: kaj prinaša, zakaj je slab, kaj o njem trdijo zagovorniki in v katerem členu je zapisan.</p>
+      </div>
+      <aside class="lawbox" id="lawbox"></aside>
+    </div>
+  </section>
+
+  <div class="filters">
+    <div class="wrap filters__row">
+      <span class="mono filters__lbl">Posledice</span>
+      <div class="chips" id="fPos"></div>
+    </div>
+    <div class="wrap filters__row">
+      <span class="mono filters__lbl">Ocena</span>
+      <div class="chips" id="fKat"></div>
+    </div>
+    <div class="wrap filters__row">
+      <span class="mono filters__lbl">Koga zadene</span>
+      <div class="chips" id="fSk"></div>
+      <span class="filters__end">
+        <button class="filters__reset hidden" id="fReset" type="button">Počisti filtre</button>
+        <span class="mono" id="fCount"></span>
+      </span>
+    </div>
+  </div>
+
+  <section class="wrap measures" id="measures"></section>
+  <div class="wrap hidden" id="measuresEmpty">
+    <div class="measures__empty">
+      <p class="d d-s">Noben ukrep ne ustreza izbranim filtrom.</p>
+      <p>Poskusi z drugačno kombinacijo ali počisti filtre.</p>
+      <button class="btn btn--sm" type="button" id="fReset2">Počisti filtre</button>
+    </div>
+  </div>
+
+  <section class="section section--ink on-dark">
+    <div class="wrap">
+      <span class="eyebrow">Skupni učinek</span>
+      <h2 class="d d-l" style="margin-bottom:48px">Kdo plača račun?</h2>
+      <div class="stats" style="border-color:var(--paper)">
+        <div class="stat"><span class="stat__num">1,2 mrd €</span><span class="stat__lbl">večji primanjkljaj prvo leto (1,5 % BDP)</span><span class="stat__src mono">Fiskalni svet</span></div>
+        <div class="stat"><span class="stat__num">+8 %</span><span class="stat__lbl">BDP višji javni dolg čez deset let</span><span class="stat__src mono">Fiskalni svet</span></div>
+        <div class="stat"><span class="stat__num">¼</span><span class="stat__lbl">izpada pokrije gospodarska rast kratkoročno, ½ v desetih letih</span><span class="stat__src mono">Fiskalni svet</span></div>
+        <div class="stat"><span class="stat__num red">0</span><span class="stat__lbl">obravnav na Ekonomsko-socialnem svetu</span><span class="stat__src mono">brez socialnega dialoga</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer"></div>
+  <script src="assets/data.js"></script>
+  <script src="assets/icons.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
