@@ -26,8 +26,20 @@ ZZB.posledice = {
   privatizacija: "Privatizacija zdravstva",
   stanovanja: "Dražja stanovanja",
   delavci: "Slabše pravice delavcev",
+  prekarizacija: "Prekarizacija",
   pokojnine: "Šibkejše pokojnine",
   oskrba: "Manj za dolgotrajno oskrbo"
+};
+
+/* Kratka razlaga posledic — vstopna stran */
+ZZB.poslediceOpis = {
+  proracun: "1,2 milijarde € manj v javnih blagajnah že prvo leto. Plačali jo bomo vsi.",
+  privatizacija: "Javni zdravniki in javni denar odtekajo k zasebnikom. Čakalne vrste se daljšajo.",
+  stanovanja: "Zakon spodbuja kupovanje stanovanj za rentništvo: oddajanje postane donosnejše, vlagatelji kupujejo, cene in najemnine rastejo.",
+  delavci: "Poškodovani delavci plačajo sami, starejši so odvisni od volje delodajalca.",
+  prekarizacija: "Prisilni s.p.-ji in navidezno samozaposlovanje namesto rednih služb.",
+  pokojnine: "Več kot 250 milijonov € na leto manj v pokojninski blagajni.",
+  oskrba: "Sistem dolgotrajne oskrbe izgubi denar, še preden zares zaživi."
 };
 
 ZZB.skupine = {
@@ -72,7 +84,7 @@ ZZB.ukrepi = [
     id: "najemnine",
     posledice: [
       { k: "proracun", t: "Vsaj 50 milijonov € na leto manj v proračunu." },
-      { k: "stanovanja", t: "Denar, ki bi lahko šel za javna najemna stanovanja, ostane lastnikom." }
+      { k: "stanovanja", t: "Nižji davek naredi oddajanje donosnejše, zato se bolj splača kupiti stanovanje za rento. Več vlagateljev pomeni višje cene stanovanj za tiste, ki iščejo dom." }
     ],
     clen: "4. člen",
     clenOpis: "spremenjen 135.č člen Zakona o dohodnini",
@@ -99,7 +111,7 @@ ZZB.ukrepi = [
   {
     id: "airbnb",
     posledice: [
-      { k: "stanovanja", t: "Več stanovanj za turiste, manj za domačine. Najemnine rastejo." }
+      { k: "stanovanja", t: "Brez omejitev kratkoročnega najema se še bolj splača kupovati stanovanja za Airbnb. Več stanovanj za turiste, manj za domačine, višje cene in najemnine." }
     ],
     clen: "42.–46. člen",
     clenOpis: "začasna neuporaba Zakona o gostinstvu; 45. člen: brez časovne omejitve kratkoročnega najema v letu 2027",
@@ -233,7 +245,7 @@ ZZB.ukrepi = [
   {
     id: "mikro-sp",
     posledice: [
-      { k: "delavci", t: "Več prisilnih s.p.-jev namesto rednih zaposlitev." },
+      { k: "prekarizacija", t: "Več prisilnih s.p.-jev namesto rednih zaposlitev." },
       { k: "pokojnine", t: "Nižji prispevki danes pomenijo pokojnine pod pragom revščine jutri." }
     ],
     clen: "21. člen",
@@ -262,6 +274,7 @@ ZZB.ukrepi = [
     id: "upokojitev",
     posledice: [
       { k: "delavci", t: "Starejši delavci so odvisni od volje delodajalca. Vrata za politične čistke v javnem sektorju." },
+      { k: "prekarizacija", t: "Kdor dela naprej, lahko dobi novo pogodbo z nižjo plačo in manj pravicami." },
       { k: "pokojnine", t: "257 milijonov € na leto manj v pokojninski blagajni (Fiskalni svet)." }
     ],
     clen: "24. in 56. člen",
@@ -294,7 +307,7 @@ ZZB.ukrepi = [
     id: "normiranci",
     posledice: [
       { k: "proracun", t: "Do 16.100 € davčnega odpustka na leto za najvišje prihodke." },
-      { k: "delavci", t: "Spodbuda za navidezno samozaposlovanje namesto redne zaposlitve." }
+      { k: "prekarizacija", t: "Spodbuda za navidezno samozaposlovanje namesto redne zaposlitve." }
     ],
     clen: "2., 3. in 5.–13. člen",
     clenOpis: "spremenjena 48. in 59. člen Zakona o dohodnini",

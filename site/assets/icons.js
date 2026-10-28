@@ -54,6 +54,8 @@
       stanovanja: G(`<path d="M2 12 10 5l8 7"/><path d="M5 10v10h10V10"/><path d="M20 12V3M17 6l3-3 3 3"/>`),
       // čelada
       delavci: G(`<path d="M4 16a8 8 0 0 1 16 0"/><path d="M2 16h20v3H2z"/><path d="M12 8v4"/>`),
+      // oseba na pretrgani podlagi
+      prekarizacija: G(`<circle cx="12" cy="4.5" r="2.5"/><path d="M12 7.5v7M8 10.5h8M12 14.5l-3 5M12 14.5l3 5"/><path d="M1 22h4M8 22h3M14 22h2M19 22h4"/>`),
       // palica in puščica navzdol
       pokojnine: G(`<circle cx="8" cy="4.5" r="2"/><path d="M8 8v6l-3 7M8 14l3 7M8 10l4 2"/><path d="M19 4v10M16 11l3 3 3-3"/>`),
       // srce v dlani

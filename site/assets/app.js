@@ -13,15 +13,23 @@
     ["aktiviraj.html", "Aktiviraj se", "aktiviraj"],
     ["dogodki.html", "Dogodki", "dogodki"]
   ];
-  const tickerItems = ["6. december: glasuj PROTI", "1,2 milijarde € luknje", "0 € za 98,5 % zaposlenih", "Zakon za bogate", "Najemnina ostane ista", "Čakaš ti, zasluži zasebnik"];
+  // trak: ključna sporočila + vse posledice zakona (brez podvajanja)
+  const tickerItems = [...new Set([
+    "6. december: glasuj PROTI", "1,2 milijarde € luknje", "0 € za 98,5 % zaposlenih", "Zakon za bogate",
+    "Dražja stanovanja", "Dvoživke v zdravstvu",
+    ...Object.values(ZZB.posledice || {})
+  ])];
+
+  // znak strani: bogataški klobuk (cilinder)
+  const HAT = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 2.8Q12 1.9 17.4 2.8L16.5 18H7.5Z" fill="currentColor"/><rect x="7.2" y="13.6" width="9.6" height="2.2" fill="var(--red)"/><path d="M1.8 15.8Q2.4 19.8 6.4 19.8H17.6Q21.6 19.8 22.2 15.8Q19 17.6 12 17.6Q5 17.6 1.8 15.8Z" fill="currentColor"/></svg>`;
 
   const header = $("#header");
   if (header) {
     const t = tickerItems.concat(tickerItems).map((x) => `<span>${x}</span>`).join("");
     header.outerHTML = `
-      <div class="ticker" aria-hidden="true"><div class="ticker__track">${t}${t}</div></div>
+      <div class="ticker" aria-hidden="true"><div class="ticker__track" style="animation-duration:${tickerItems.length * 6}s">${t}${t}</div></div>
       <header class="header"><div class="wrap">
-        <a class="logo" href="index.html"><span class="logo__mark">✕</span>Zakon za bogate</a>
+        <a class="logo" href="index.html"><span class="logo__mark">${HAT}</span>Zakon za bogate</a>
         <nav class="nav" id="nav">${NAV.slice(1).map(([h, l, k]) => `<a href="${h}"${k === page ? ' aria-current="page"' : ""}>${l}</a>`).join("")}</nav>
         <div class="header__cta">
           <a class="btn btn--red btn--sm" href="aktiviraj.html">6. 12. glasuj proti</a>
@@ -288,7 +296,36 @@
     $("#fReset").addEventListener("click", () => { reset(); toListTop(); });
     $("#fReset2").addEventListener("click", () => { reset(); toListTop(); });
     document.addEventListener("change", (e) => { if (["fp", "fk", "fs"].includes(e.target.name)) { apply(); toListTop(); } });
+    // povezava ?posledica=… (npr. z vstopne strani) vnaprej izbere filter
+    const pre = new URLSearchParams(location.search).get("posledica");
+    const preInput = pre && $(`[name="fp"][value="${CSS.escape(pre)}"]`);
+    if (preInput) {
+      preInput.checked = true;
+      // po nalaganju skoči na filtre (setTimeout, da ga ne povozi obnovitev položaja brskalnika)
+      const top = () => $(".filters").getBoundingClientRect().top + window.scrollY - $(".header").offsetHeight;
+      window.addEventListener("load", () => setTimeout(() => window.scrollTo({ top: top(), behavior: "instant" }), 0));
+    }
     apply();
+  }
+
+  /* ---------- posledice na vstopni strani ---------- */
+  const posGrid = $("#posledice");
+  if (posGrid) {
+    const IC = window.ZZB_ICONS || { posledice: {} };
+    const n = (k) => ZZB.ukrepi.filter((u) => (u.posledice || []).some((p) => p.k === k)).length;
+    const ukr = (x) => x === 1 ? "ukrep" : x === 2 ? "ukrepa" : x < 5 ? "ukrepi" : "ukrepov";
+    posGrid.innerHTML = Object.entries(ZZB.posledice).map(([k, v]) => `
+      <a class="pcard" href="ukrepi.html?posledica=${k}">
+        <span class="pcard__ic">${IC.posledice[k] || ""}</span>
+        <span class="pcard__t">${esc(v)}</span>
+        <span class="pcard__d">${esc((ZZB.poslediceOpis || {})[k] || "")}</span>
+        <span class="mono pcard__n">${n(k)} ${ukr(n(k))} →</span>
+      </a>`).join("") + `
+      <a class="pcard pcard--all" href="ukrepi.html">
+        <span class="pcard__t">Vsi ukrepi</span>
+        <span class="pcard__d">Preveri vseh ${ZZB.ukrepi.length} ukrepov in v katerem členu zakona so zapisani.</span>
+        <span class="mono pcard__n">Spoznaj ukrepe →</span>
+      </a>`;
   }
 
   /* ---------- predogled ukrepov na vstopni strani ---------- */
@@ -320,7 +357,7 @@
       gal.innerHTML = ZZB.grafike.filter((g) => tema === "vse" || g.tema === tema).map((g, i) => `
         <figure class="gfx" style="margin:0">
           <div class="gfx__img">${g.src ? `<img src="${esc(g.src)}" alt="${esc(g.naslov)}">` :
-            `<div class="poster poster--${g.barva}"><span class="poster__small">ZAKON ZA BOGATE ✕</span><span class="poster__big">${esc(g.velik)}</span><span class="poster__small">${esc(g.mali)}</span></div>`}</div>
+            `<div class="poster poster--${g.barva}"><span class="poster__small poster__brand">${HAT}ZAKON ZA BOGATE</span><span class="poster__big">${esc(g.velik)}</span><span class="poster__small">${esc(g.mali)}</span></div>`}</div>
           <figcaption class="gfx__bar"><span class="mono">${esc(g.naslov)}</span>
             <span style="display:flex;gap:6px">
               <a class="btn btn--sm btn--paper" ${g.src ? `href="${esc(g.src)}" download` : 'aria-disabled="true" style="opacity:.45;pointer-events:none"'}>Prenesi</a>

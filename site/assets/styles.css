@@ -98,8 +98,11 @@ button, input, select, textarea { font: inherit; color: inherit; }
 }
 .logo__mark {
   width: 30px; height: 30px; background: var(--red); color: var(--ink);
-  display: grid; place-items: center; font-size: 22px; font-stretch: 100%;
+  display: grid; place-items: center;
 }
+.logo__mark svg { width: 24px; height: 24px; display: block; }
+.poster__brand { display: flex; align-items: center; gap: 6px; }
+.poster__brand svg { width: 16px; height: 16px; }
 .nav { display: flex; gap: 4px; }
 .nav a {
   text-decoration: none; padding: 8px 14px;
@@ -648,4 +651,32 @@ input[type="range"] { width: 100%; max-width: 460px; accent-color: var(--red); m
 }
 @media (max-width: 900px) {
   .posbox { grid-template-columns: 1fr; padding: 16px; gap: 24px; }
+}
+
+/* ---------- posledice na vstopni strani ---------- */
+.pgrid { display: grid; grid-template-columns: repeat(4, 1fr); border: 2px solid var(--ink); gap: 2px; background: var(--ink); }
+.pcard {
+  background: var(--paper); text-decoration: none; padding: 24px;
+  display: flex; flex-direction: column; gap: 12px; min-height: 280px;
+  transition: background .15s, color .15s;
+}
+.pcard__ic {
+  width: 64px; height: 64px; display: grid; place-items: center; margin-bottom: 12px;
+  background: var(--red); border: 2px solid var(--ink); box-shadow: 4px 4px 0 var(--ink);
+}
+.pcard__ic svg { width: 36px; height: 36px; }
+.pcard__t { font-family: var(--display); font-stretch: 68%; font-weight: 900; text-transform: uppercase; font-size: 32px; line-height: .92; }
+.pcard__d { font-size: 16px; line-height: 1.45; color: var(--ink-2); }
+.pcard__n { margin-top: auto; font-size: 12px; }
+.pcard:hover { background: var(--ink); color: var(--paper); }
+.pcard:hover .pcard__d { color: #C9C4B8; }
+.pcard:hover .pcard__ic { box-shadow: 4px 4px 0 var(--paper); border-color: var(--paper); }
+.pcard--all { background: var(--red); justify-content: flex-end; }
+.pcard--all .pcard__d { color: var(--ink); }
+.pcard--all .pcard__n { margin-top: 0; }
+@media (max-width: 1100px) { .pgrid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 560px) {
+  .pgrid { grid-template-columns: 1fr; }
+  .pcard { min-height: 0; padding: 16px; }
+  .pcard__t { font-size: 28px; }
 }
