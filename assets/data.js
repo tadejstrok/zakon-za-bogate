@@ -191,7 +191,7 @@ ZZB.ukrepi = [
   {
     id: "najemnine",
     posledice: [
-      { k: "proracun", t: "Vsaj 50 milijonov € na leto manj v proračunu." },
+      { k: "proracun", t: "Vsaj 50 milijonov € na leto manj v proračunu — tudi za davčni popust pri oddajanju lokalov, pisarn in zemljišč." },
       { k: "stanovanja", t: "Nižji davek naredi oddajanje donosnejše, zato se bolj splača kupiti stanovanje za rento. Več vlagateljev pomeni višje cene stanovanj za tiste, ki iščejo dom." }
     ],
     clen: "4. člen",
@@ -203,20 +203,26 @@ ZZB.ukrepi = [
     uradno: "Nižja dohodnina od oddajanja premoženja",
     kratko: "Davek na najemnine pade s 25 % na 15 % (za mlade in družine na 5 %). Najemnine se zaradi tega ne bodo znižale.",
     kaj: [
-      "Davek na dohodek iz oddajanja nepremičnin se zniža s 25 % na 15 %. Pri dolgoročnem najemu za mlade do 30 let in družine z otroki se zniža na 5 %."
+      "Davek na dohodek iz oddajanja premoženja se zniža s 25 % na 15 %. Velja za vse oddajanje premoženja — tudi poslovnih prostorov, zemljišč, vozil in strojev, ne le stanovanj.",
+      "Le nižja stopnja 5 % je omejena na stanovanja: za najem mladim do 30 let in družinam z otroki, ki imajo v stanovanju prijavljeno stalno prebivališče."
     ],
     zakaj: [
-      "Zakon znižuje davek najemodajalcem, višine najemnin pa ne ureja v nobenem členu. Najemodajalci imajo na trgu premoč in najemnine dvigujejo ne glede na davek. Nižji davek ostane v njihovem žepu.",
-      "Primer: pri najemnini 700 € lastnik plača okoli 63 € manj davka na mesec. Najemnik plača enako kot prej.",
+      "To smo že poskusili. Leta 2022 je bil davek na najemnine 15 %, najemnine pa so tisto leto zrasle za 12,5 %. Ko se je davek vrnil na 25 %, so rasle počasneje: leta 2023 za 9 %, leta 2024 za 5,4 %.",
+      "To ni stanovanjski ukrep. Nižji davek dobijo tudi najemodajalci lokalov, pisarn, zemljišč, vozil in strojev.",
+      "Koalicija bi ga lahko omejila na stanovanja v dolgoročnem najemu. Amandmaja SD in Levice, ki sta to predlagala, je zavrnila z 8 : 46 in 9 : 47.",
+      "Zakon višine najemnin ne ureja v nobenem členu in nižjega davka ne veže na dolžino najema. Pri najemnini 700 € lastnik plača okoli 63 € manj davka na mesec, najemnik pa enako kot prej.",
+      "Nadzor nad najemi že danes ne deluje. Najemnine, vpisane v uradno evidenco, so po analizi Urbanističnega inštituta v večini primerov dosegale le 40–70 % oglaševanih — raziskovalci to razlagajo kot znak sive ekonomije. Zakon ne uvaja nobenega dodatnega nadzora, s katerim bi preverjali pogoje za 5-odstotno stopnjo.",
+      "Hkrati zakon odpravi omejitve za Airbnb. Lastniku se bo še naprej bolj splačalo oddajati turistom kot domačinom.",
       "Država izgubi vsaj 50 milijonov € na leto — denar, ki bi lahko šel za javna najemna stanovanja."
     ],
     citati: [
       { t: "Mladim prinaša pot do stanovanj.", kdo: "" },
+      { t: "Z nižjim davkom bodo lastniki oddali več stanovanj, večja ponudba pa bo znižala najemnine.", kdo: "" },
       { t: "Z zakonom se bodo pocenile tudi najemnine.", kdo: "minister Anže Logar v Odmevih (povzetek)" }
     ],
-    resnica: "Pot do stanovanj so nižje najemnine in več javnih stanovanj. Ta ukrep ne prinaša ne enega ne drugega.",
-    stevilka: "≥ 50 mio €",
-    stevilkaOpis: "na leto manj za javna stanovanja"
+    resnica: "Leta 2022, ko je bil davek 15 %, so najemnine zrasle za 12,5 %. Zakonodajno-pravna služba DZ: »Brez dodatnih ukrepov je predlagana ureditev namenjena zgolj nižji davčni obremenitvi najemodajalcev.«",
+    stevilka: "+12,5 %",
+    stevilkaOpis: "najemnine leta 2022, ko je bil davek že 15 %"
   },
   {
     id: "airbnb",
@@ -232,18 +238,22 @@ ZZB.ukrepi = [
     uradno: "Odlog uporabe Zakona o gostinstvu (ZGos‑1)",
     kratko: "Zakon do konca leta 2026 zamrzne regulacijo kratkoročnega oddajanja, za leto 2027 pa odpravi časovno omejitev oddajanja turistom. Manj stanovanj za domačine, višje najemnine.",
     kaj: [
-      "Zakon do 31. decembra 2026 ustavi uporabo novega Zakona o gostinstvu, ki ureja kratkoročno oddajanje stanovanj prek platform, kot sta Airbnb in Vrbo.",
-      "Za leto 2027 kratkoročnega oddajanja stanovanj časovno ne omeji in ne uporablja uredbe o občinah z visokim tveganjem negativnih vplivov kratkoročnega najema. Soglasja sosedov za kratkoročni najem podaljša do konca leta 2027."
+      "Zakon do 31. decembra 2026 ustavi uporabo celotnega novega Zakona o gostinstvu in vseh aktov, sprejetih na njegovi podlagi — tudi občinskih odlokov.",
+      "Za leto 2027 kratkoročnega oddajanja stanovanj časovno ne omeji. S tem odpravi omejitve v 14 občinah z največjim pritiskom, med njimi v Ljubljani, na Bledu, v Bohinju, Kranjski Gori, Piranu in Kopru. Bled in Bohinj sta za bloke že sprejela omejitev 30 dni na leto.",
+      "Soglasja sosedov za kratkoročni najem podaljša do konca leta 2027."
     ],
     zakaj: [
       "Med 2015 in 2023 se je število ležišč na platformah skoraj popetorilo. V istem času so cene stanovanj zrasle za 102 %, najemnine za 73 %.",
       "Najemnina enosobnega stanovanja v Ljubljani presega 50 % neto plače. Po merilih OECD in Eurostata ne bi smela preseči 30 %.",
+      "Kratkoročni najemi so na štirih največjih platformah med 2018 in 2024 zrasli za 93 %. Evropska unija zato občinam daje več orodij za omejevanje, ta zakon pa jim jih jemlje.",
+      "Zamrzne tudi pravila, ki z Airbnb nimajo zveze, npr. obratovalni čas lokalov. Zakonodajno-pravna služba DZ je opozorila, da to povzroča »popolno zmešnjavo in nezmožnost izvajanja v praksi«.",
       "Za ta ukrep so lobirali lastniki Airbnb stanovanj."
     ],
     citati: [
-      { t: "Ne smemo škoditi turizmu.", kdo: "" }
+      { t: "Ne smemo škoditi turizmu.", kdo: "" },
+      { t: "Z odlogom v panogo vnašamo stabilnost in jasna pravila.", kdo: "" }
     ],
-    resnica: "Stanovanja so za ljudi, ki v mestu živijo in delajo. Regulacija bi že v 2027 vrnila stanovanja na najemni trg.",
+    resnica: "Stanovanja so za ljudi, ki v kraju živijo in delajo. Tudi kandidat SDS za ljubljanskega župana Aleš Vrhovec pravi: »Airbnb je treba radikalno omejiti.«",
     stevilka: "+73 %",
     stevilkaOpis: "najemnine 2015–2023"
   },
@@ -469,7 +479,9 @@ ZZB.miti = [
   { oni: "To je razvojni zakon, ne zakon za bogate.", kdo: "Peter Papež, državni sekretar", mi: "Osrednji ukrep koristi 1,5 % zaposlenih. Za vse ostale prinaša 0 €." },
   { oni: "To niso ukrepi za bogate, to so ukrepi za normalno življenje.", kdo: "Rado Gladek, poslanec SDS", mi: "Kapica da v povprečju okoli 20.000 € na leto vsakemu od manj kot 13.000 najbolje plačanih. Kdor zasluži 1.500 €, ne dobi nič." },
   { oni: "Rast bo pokrila izpad.", kdo: "", mi: "Fiskalni svet: rast »tudi na dolgi rok ne bi zadoščala za nadomestitev izhodiščnega poslabšanja«. Zakon javne finance trajno poslabša za 0,7 % BDP — več kot pol milijarde € vsako leto." },
-  { oni: "Z zakonom se bodo pocenile tudi najemnine.", kdo: "minister Anže Logar v Odmevih (povzetek)", mi: "Zakon znižuje davek najemodajalcem, višine najemnin pa ne ureja v nobenem členu." },
+  { oni: "Z zakonom se bodo pocenile tudi najemnine.", kdo: "minister Anže Logar v Odmevih (povzetek)", mi: "To smo že poskusili: leta 2022 je bil davek 15 %, najemnine pa so zrasle za 12,5 %. Zakon višine najemnin ne ureja v nobenem členu." },
+  { oni: "Davek znižujemo, da pomagamo najemnikom.", kdo: "", mi: "Potem bi ga omejili na stanovanja. Amandmaja, ki sta to predlagala, je koalicija zavrnila. Nižji davek dobijo tudi najemodajalci lokalov, pisarn in strojev." },
+  { oni: "Odlog zakona o gostinstvu prinaša stabilnost.", kdo: "", mi: "Zakonodajno-pravna služba DZ opozarja na »popolno zmešnjavo in nezmožnost izvajanja v praksi«. Zamrzne tudi pravila za lokale in občinske odloke, ki že veljajo." },
   { oni: "Naš cilj je preprost: nižje položnice, nižji davčni pritisk na delo, lažji dostop mladim do stanovanj.", kdo: "Mojca Žnidarič, Demokrati", mi: "Zakon nikjer ne zahteva nižjih cen. Na Hrvaškem je po znižanju DDV cene znižala le tretjina trgovcev." },
   { oni: "Mladim prinaša pot do stanovanj.", kdo: "", mi: "Nižji davek dobi lastnik, Airbnb ostane neomejen. Najemnine ne padejo." },
   { oni: "Zdravniki bodo lahko delali več, vrste bodo krajše.", kdo: "", mi: "To smo že imeli. 2022–2024: rekordni dobički zasebnikov, daljše vrste." },
@@ -491,6 +503,7 @@ ZZB.grafike = [
   { naslov: "1.400 € na gospodinjstvo", tema: "splosno", barva: "red", velik: "1.400 €", mali: "za vsako gospodinjstvo. Toliko zakon vzame javnim blagajnam že prvo leto.", src: "" },
   { naslov: "7× brezplačni vrtci", tema: "splosno", barva: "gold", velik: "7× brezplačni vrtci", mali: "1,2 milijarde € je sedemkrat toliko, kot bi na leto stali brezplačni vrtci za vse otroke.", src: "" },
   { naslov: "15 let brezplačnih kosil", tema: "splosno", barva: "paper", velik: "15 let brezplačnih kosil", mali: "za vse osnovnošolce. Ali pa davčno darilo za najbogatejše.", src: "" },
+  { naslov: "Že poskusili: 2022", tema: "stanovanja", barva: "ink", velik: "Davek 15 %. Najemnine +12,5 %.", mali: "Leta 2022 je bil davek na najemnine že 15 %. Najemnine niso padle — zrasle so.", src: "" },
   { naslov: "Pogoji za upokojitev",      tema: "delo",    barva: "ink",   velik: "Izpolniš pogoje? Ostaneš brez službe.", mali: "Interventni zakon, člen o upokojevanju", src: "" }
 ];
 ZZB.temeGrafik = { vse: "Vse", splosno: "Splošno", kapica: "Kapica", stanovanja: "Stanovanja", zdravstvo: "Zdravstvo", delo: "Delo" };

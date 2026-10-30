@@ -253,3 +253,45 @@ Uporabljeno na strani:
 - [Demokracija: O interventnem zakonu na referendum na Miklavževo](https://demokracija.si/fokus/o-interventnem-zakonu-na-referendum-na-miklavzevo/)
 - [Poslovni.si: Vse, kar morate vedeti o ZIURS](https://poslovni.si/novice/reforma-davkov-in-trga-dela-vse-kar-morate-vedeti-o-zakonu-o-interventnih-ukrepih-ziurs)
 - [Siol: Sindikati zbrali podpise](https://siol.net/novice/slovenija/sindikati-zbrali-podpise-za-referendum-o-interventnem-zakonu-za-razvoj-slovenije-702294)
+
+---
+
+## 8. Najemnine in Airbnb — preverjanje komentarja »Interventni komentar« (29. 10. 2026)
+
+**Potrjeno — lahko gre na stran:**
+
+- **Velja za vse premoženje:** 4. člen zniža stopnjo v celotnem 135.č členu ZDoh-2 (vse oddajanje premoženja, tudi poslovni prostori, zemljišča, premičnine). Le 5 % je omejenih na stanovanja.
+- **Precedens 2022:** stopnja je bila že znižana s 27,5 % na 15 % (od 1. 1. 2022). Najemnine so tisto leto zrasle za 12,5 % (SURS), 2023 pri 25 % za 9 %, 2024 za 5,4 %. Pobrani davek: 2022 18,1 mio €, 2024 38,0 mio € (FURS). Viri: [24ur, 16. 7. 2026](https://www.24ur.com/novice/dejstva/nizja-obdavcitev-najemnin-drzavna-subvencija-za-lastnike-stanovanj.html), [Info360, 20. 7. 2026](https://info360.si/aktualno/nizji-davek-na-najemnine-nizje-najemnine-stevilke-furs-razkrivajo-kaj-je-v-igri/). Komentar napačno navaja leto 2021.
+- **Število zavezancev po napovedi:** ≈ 43.000 (FURS, 2024: 43.022).
+- **Zakonodajno-pravna služba DZ, mnenje 6. 5. 2026** (PDF na strani DZ, EPA 15-X), dobesedno:
+  - »Posebne utemeljitve za znižanje davčne stopnje z veljavnih 25 % na 15 % zakonodajno gradivo ne vsebuje […] Oba splošna namena predlaganih določb, kot sta prikazana v obrazložitvi, iz same norme ne izhajata.«
+  - »Brez dodatnih ukrepov je predlagana ureditev namenjena zgolj nižji davčni obremenitvi najemodajalcev, saj jih Predlog zakona ne zavezuje k določitvi nižjih najemnih stroškov zaradi nižje davčne stopnje pri oddajanju nepremičnin, temveč je višina najemnine še vedno predmet najemne pogodbe med najemodajalcem in najemojemalcem.«
+  - »Predlog zakona določa začasno prenehanje uporabe celotnega ZGos-1, čeprav predlagatelj v obrazložitvi izpostavlja predvsem težave glede sprejemanja podzakonskih predpisov in izvajanja instituta kratkotrajnega najema, kar postavlja pod vprašaj primernost takega ukrepa.«
+  - O obratovalnem času in občinskih aktih: »… kar bi povzročilo medsebojno neusklajenost ter popolno zmešnjavo in nezmožnost izvajanja v praksi. Predlagana ureditev je zaradi navedenega izrazito sporna z vidika načel pravne varnosti in zaupanja v pravo …«
+- **Zavrnjeni amandmaji k 4. členu (seja DZ, 11. 5. 2026):**
+  - PS Levica Vesna: 25 % ostane; 15 % le za stanovanja, oddana za vsaj 3 leta; 5 % s pogojem vsaj 3-letne pogodbe — **zavrnjen 9 : 47**.
+  - PS SD: znižanje le za stanovanja v dolgoročnem najemu (10 %, pogodba ≥ 3 leta, priložena napovedi), 5 % s 3-letno pogodbo; v obrazložitvi: znižanje velja tudi za »poslovne in druge nepremičnine, pa tudi premičnine (npr. vozila, plovila, oprema in stroji)« — **zavrnjen 8 : 46**.
+  - PS Svoboda: črtanje člena — **zavrnjen 30 : 47**.
+  - Na matičnem odboru (6. 5. 2026) so bili amandmaji Levice in SD k 4. členu prav tako nesprejeti; amandmaji LV in Svobode k členom o gostinstvu nesprejeti.
+- **Občine z omejitvijo (2027–2028):** 14 občin — Ankaran, Bled, Bohinj, Bovec, Cerklje na Gorenjskem, Gorje, Izola, Koper, Kranjska Gora, Ljubljana, Piran, Preddvor, Radovljica, Žirovnica. Brez občinskega odloka velja 60 dni ([gov.si](https://www.gov.si/novice/2026-05-08-objavljen-sklep-o-dolocitvi-obcin-z-visokim-tveganjem-negativnih-vplivom-kratkotrajnega-najema/)).
+- **Sprejeti odloki ([STA, 23. 10. 2026](https://tax-fin-lex.si/home/Novica/37705)):** Bled — 30 dni v blokih, drugod 180 (sobodajalci) oz. 270 (s.p.); Bohinj — 30 dni v blokih v Stari Fužini in Bohinjski Bistrici, drugod 270; Kranjska Gora — 60 dni na stanovanjskih območjih, 180 drugod, 270 na turističnih območjih.
+- **Aleš Vrhovec (kandidat SDS za župana Ljubljane), [Siol, 24. 10. 2026](https://siol.net/novice/slovenija/ales-vrhovec-v-vseh-soseskah-bo-ko-bom-jaz-zupan-parkiranje-zastonj-704646):** »Airbnb je zelo velik problem in neposredno povzroča erozijo …«; »Airbnb je treba radikalno omejiti.« (Stavek o »starem delu Ljubljane, preplavljenem z Airbnb« je vprašanje novinarke.)
+- **EU:** rast kratkoročnih najemov na štirih največjih platformah za 93 % med 2018 in 2024 ([EUobserver, 9. 9. 2026](https://euobserver.com/236509/eu-moves-to-curb-airbnbstyle-rentals-in-bid-to-ease-housing-stress/)).
+
+**Ni potrjeno — ne uporabljati:**
+
+- 115.000 zavezancev, od tega 73.000 z odtegljajem (FURS ne objavlja; vprašati FURS).
+- ~~Prijavljene najemnine 50 % nižje od dejanskih~~ → **delno potrjeno, v drugačni obliki** (glej spodaj).
+
+**Najemnine v uradni evidenci proti oglasom — UIRS, projekt ZNAJT** ([stran projekta](https://www.uirs.si/sl-si/Raziskovanje/Projekt/id/1323)):
+- Poročilo »Primerjava podatkov iz evidence trga nepremičnin in razmer na zasebnem najemnem trgu« (UIRS za Ministrstvo za solidarno prihodnost, 15. 11. 2025; avtorji B. Kerbler idr.). Primerjava najemnih poslov v ETN (GURS) z oglasi na nepremicnine.net, okt.–dec. 2024, 10 mestnih občin, 1.958 ustreznih poslov.
+- Povzetek ugotovitev: srednja vrednost najemnin na m² stanovanj v ETN »v nobeni izbrani občini v nobenem mesecu […] ni dosegla 80 % srednje vrednosti […] pri ustreznih oglasih. V primeru z največjo razliko je dosegla manj kot 16 %, v večini primerov pa med 40 in 70 %«.
+- Ljubljana: srednja najemnina stanovanj v ETN 480 € proti 900 € v oglasih (»za skoraj polovico« manj); povprečna 686 € proti 1.062 €.
+- Predstavitev (28. 11. 2025): baza bi prikazovala »odstopanje med oglaševanimi najemninami in podatki v ETN ter tako odražala prisotnost in razsežnost sive ekonomije in oddajanja stanovanj na t. i. črnem trgu«.
+- **Omejitve:** oglasi so izklicne, ne dejanske najemnine; ETN ima napake pri vnosu (poročilo navaja primere); le trimesečni vzorec. Zato NE pisati »prijavljene najemnine so 50 % nižje od dejanskih«, ampak: »najemnine, vpisane v uradno evidenco, so v večini primerov dosegale le 40–70 % oglaševanih (UIRS, 2025)«.
+- »20 % stanovanjskega fonda« (EU) — ni v preverjenem viru.
+- Ljubljana: ali je sprejela lasten odlok (rok 31. 10. 2026); do potrditve le »brez odloka velja 60 dni«.
+- Kranjska Gora: 28 % turistične rabe, 38 % praznih stanovanj, +105 % nočitev (strokovna podlaga občine).
+- Pobuda Državnega sveta (14. 10. 2026) o odgovorni osebi in hrupu — ni najdena na ds-rs.si.
+- Vrhovec v Dnevniku (29. 10. 2026) — ni preverjeno.
+- Trditev nasprotnikov ZGos-1 o 200 mio € škode — vir ni najden.
