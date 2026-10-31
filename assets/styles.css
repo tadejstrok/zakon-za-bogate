@@ -755,3 +755,90 @@ input[type="range"] { width: 100%; max-width: 460px; accent-color: var(--red); m
   .ngrid, .pgrid { grid-template-columns: 1fr; }
   .ncard { min-height: 0; padding: 16px; }
 }
+
+/* ============================================================
+   STRAN: DONIRAJ
+   ============================================================ */
+.paybox {
+  border: 2px solid var(--ink); background: var(--paper); padding: 24px;
+  box-shadow: 8px 8px 0 var(--red); min-width: 0;
+}
+.paybox .eyebrow { margin-bottom: 16px; }
+.pay__notice { margin: 0 0 16px; font-size: 16px; line-height: 1.4; }
+.pay__list { margin: 0; }
+.pay__row { display: grid; grid-template-columns: 112px 1fr; gap: 12px; align-items: baseline; padding: 8px 0; border-bottom: 1px dashed var(--line); }
+.pay__row:last-child { border-bottom: 0; }
+.pay__row dt { font-size: 11px; color: var(--muted); }
+.pay__row dd { margin: 0; min-width: 0; overflow-wrap: anywhere; font-weight: 600; }
+.pay__iban { font-family: var(--mono); font-size: 18px; letter-spacing: .04em; }
+.pay__todo {
+  display: inline-block; padding: 2px 8px; background: var(--gold); border: 1px dashed var(--ink);
+  font-family: var(--mono); font-size: 12px; font-weight: 700; line-height: 1.5; color: var(--ink);
+}
+.pay__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; margin-top: 24px; }
+.pay__actions .btn svg { width: 20px; height: 20px; }
+.pay__qr { width: 160px; height: 160px; border: 2px solid var(--ink); background: #fff; }
+.pay__qrnote { font-size: 11px; color: var(--muted); max-width: 24ch; line-height: 1.4; }
+
+/* za kaj gre denar */
+.dgrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; background: var(--ink); border: 2px solid var(--ink); }
+.dcard { background: var(--paper); padding: 24px; display: flex; flex-direction: column; gap: 12px; align-items: flex-start; }
+.dcard .pcard__d { flex: 1; }
+.dcard__pr { font-size: 12px; }
+
+/* pravila */
+.rules { display: grid; gap: 32px; }
+.rules__who { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; background: var(--ink); border: 2px solid var(--ink); }
+.rules__list { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.rules__list li { display: grid; grid-template-columns: 32px 1fr; gap: 12px; align-items: start; font-size: 19px; line-height: 1.35; font-weight: 600; }
+.rules__list li::before {
+  width: 32px; height: 32px; display: grid; place-items: center; border: 2px solid var(--ink);
+  font-weight: 900; font-size: 18px; line-height: 1;
+}
+.rules__list--da li::before { content: "✓"; background: var(--ink); color: var(--paper); }
+.rules__list--ne li::before { content: "✕"; background: var(--red); color: var(--ink); }
+.rules__nums { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 2px solid var(--ink); }
+.rules__num { display: flex; flex-direction: column; gap: 12px; padding: 24px 24px 0 0; font-size: 16px; line-height: 1.4; }
+.rules__num + .rules__num { padding-left: 24px; border-left: 2px solid var(--ink); }
+.rules__num .d { font-size: clamp(48px, 5vw, 88px); white-space: nowrap; }
+.rules__pts { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 16px 48px; max-width: 1100px; }
+.rules__pts li { padding-left: 24px; position: relative; font-size: 17px; line-height: 1.5; }
+.rules__pts li::before { content: "→"; position: absolute; left: 0; color: var(--red); font-weight: 900; }
+.rules__vir { margin: 0; font-size: 11px; color: var(--muted); }
+
+/* druge oblike pomoči */
+.hgrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: var(--paper); border: 2px solid var(--paper); }
+.hcard {
+  background: var(--ink); color: var(--paper); text-decoration: none; padding: 24px;
+  display: flex; flex-direction: column; gap: 12px; min-height: 280px; transition: background .15s, color .15s;
+}
+.hcard__ic { width: 64px; height: 64px; display: grid; place-items: center; margin-bottom: 12px; background: var(--red); color: var(--ink); border: 2px solid var(--paper); }
+.hcard__ic svg { width: 36px; height: 36px; }
+.hcard__d { color: #C9C4B8; font-size: 16px; line-height: 1.45; flex: 1; }
+.hcard:hover { background: var(--paper); color: var(--ink); }
+.hcard:hover .hcard__d { color: var(--ink-2); }
+.hcard:hover .hcard__ic { border-color: var(--ink); }
+
+@media (max-width: 1100px) { .dgrid { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 900px) {
+  .rules__who, .rules__pts, .hgrid { grid-template-columns: 1fr; }
+  .rules__nums { grid-template-columns: 1fr; }
+  .rules__num, .rules__num + .rules__num { padding: 24px 0; border-left: 0; border-bottom: 2px solid var(--ink); }
+  .hcard { min-height: 0; }
+}
+@media (max-width: 560px) {
+  .dgrid { grid-template-columns: 1fr; }
+  .dcard, .hcard, .paybox { padding: 16px; }
+  .pay__row { grid-template-columns: 1fr; gap: 4px; }
+  .rules__list li { font-size: 17px; }
+}
+
+/* glava s petimi povezavami: brez prelamljanja na srednjih širinah */
+.nav a, .header__cta .btn { white-space: nowrap; }
+@media (min-width: 901px) and (max-width: 1180px) {
+  .header .wrap { gap: 16px; }
+  .nav { gap: 0; }
+  .nav a { padding: 8px 8px; font-size: 14px; }
+  .logo { font-size: 26px; }
+  .header__cta .btn { padding: 8px 12px; font-size: 14px; }
+}

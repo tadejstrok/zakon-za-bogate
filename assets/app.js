@@ -11,7 +11,8 @@
     ["index.html", "Domov", "domov"],
     ["ukrepi.html", "Spoznaj ukrepe", "ukrepi"],
     ["aktiviraj.html", "Aktiviraj se", "aktiviraj"],
-    ["dogodki.html", "Dogodki", "dogodki"]
+    ["dogodki.html", "Dogodki", "dogodki"],
+    ["doniraj.html", "Doniraj", "doniraj"]
   ];
   // trak: ključna sporočila + vse posledice zakona (brez podvajanja)
   const tickerItems = [...new Set([
@@ -439,6 +440,54 @@
       cities.map((c) => `<label class="chip"><input type="radio" name="city" value="${esc(c)}"><span>${esc(c)}</span></label>`).join("");
     $("#cityFilter").addEventListener("change", (e) => draw(e.target.value));
     draw("");
+  }
+
+  /* ---------- doniraj ---------- */
+  const pay = $("#paybox");
+  if (pay && ZZB.donacije) {
+    const D = ZZB.donacije, P = ZZB.donacijePravila;
+    const IC = (window.ZZB_ICONS || {}).doniraj || {};
+    const manjka = (v) => !v || /^DOPOLNI/.test(v);
+    const polja = [["organizator", "Prejemnik"], ["naslov", "Naslov"], ["iban", "IBAN (TRR)"], ["banka", "Banka"],
+      ["namen", "Namen"], ["sklic", "Sklic"], ["kodaNamena", "Koda namena"]];
+    const nepopolno = polja.some(([k]) => manjka(D[k]));
+    const val = (k) => manjka(D[k])
+      ? `<span class="pay__todo">${esc(D[k] || "DOPOLNI")}</span>`
+      : `<span class="pay__v${k === "iban" ? " pay__iban" : ""}">${esc(D[k])}</span>`;
+    pay.innerHTML = `
+      <span class="eyebrow">Podatki za nakazilo</span>
+      ${nepopolno ? `<p class="notice pay__notice"><b>Račun še ni odprt.</b> Podatki za nakazilo bodo objavljeni tukaj. Do takrat prosimo, ne nakazuj ničesar.</p>` : ""}
+      <dl class="pay__list">${polja.map(([k, l]) => `<div class="pay__row"><dt class="mono">${l}</dt><dd>${val(k)}</dd></div>`).join("")}</dl>
+      <div class="pay__actions">
+        <button class="btn btn--red" id="copyIban" type="button"${manjka(D.iban) ? " disabled" : ""}>${IC.kopiraj || ""}<span>Kopiraj IBAN</span></button>
+        ${D.qr && !nepopolno ? `<img class="pay__qr" src="${esc(D.qr)}" alt="UPN QR koda za nakazilo" width="160" height="160">` : `<span class="mono pay__qrnote">UPN QR koda bo dodana, ko bo račun odprt.</span>`}
+      </div>`;
+    const cb = $("#copyIban");
+    cb.addEventListener("click", async () => {
+      try { await navigator.clipboard.writeText(D.iban.replace(/\s/g, "")); cb.lastElementChild.textContent = "Kopirano!"; }
+      catch (_) { cb.lastElementChild.textContent = D.iban; }
+      setTimeout(() => (cb.lastElementChild.textContent = "Kopiraj IBAN"), 2500);
+    });
+
+    $("#nameni").innerHTML = D.nameni.map((n) => `
+      <div class="dcard">
+        <span class="pcard__ic">${IC[n.ikona] || ""}</span>
+        <span class="pcard__t">${esc(n.naslov)}</span>
+        <span class="pcard__d">${esc(n.opis)}</span>
+        ${n.primer ? `<span class="${manjka(n.primer) ? "pay__todo" : "mono dcard__pr"}">${esc(n.primer)}</span>` : ""}
+      </div>`).join("");
+
+    $$("[data-ic]").forEach((el) => (el.innerHTML = IC[el.dataset.ic] || ""));
+
+    const li = (a) => a.map((x) => `<li>${esc(x)}</li>`).join("");
+    $("#pravila").innerHTML = `
+      <div class="rules__who">
+        <div class="mx__box"><h3 class="mx__h">Lahko donirajo</h3><ul class="rules__list rules__list--da">${li(P.smejo)}</ul></div>
+        <div class="mx__box"><h3 class="mx__h">Ne smejo donirati</h3><ul class="rules__list rules__list--ne">${li(P.nesmejo)}</ul></div>
+      </div>
+      <div class="rules__nums">${P.dejstva.map((d) => `<div class="rules__num"><span class="d">${d.st}</span><span>${esc(d.t)}</span></div>`).join("")}</div>
+      <ul class="rules__pts">${li(P.tocke)}</ul>
+      <p class="mono rules__vir">${esc(P.vir)}</p>`;
   }
 
   /* ---------- obrazci (prototip) ---------- */

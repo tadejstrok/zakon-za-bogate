@@ -528,3 +528,53 @@ ZZB.instagram = [
   { url: "#", poster: "", opis: "Kako glasuješ 6. decembra" },
   { url: "#", poster: "", opis: "»Mi tega ne rabimo« — ljudje s plačo nad 7.500 €" }
 ];
+
+/* ---------- DONACIJE (stran doniraj.html) ----------
+   ⚠ PODATKI ZA NAKAZILO ŠE NISO ZNANI. Vsako polje, ki se začne z
+   "DOPOLNI", se na strani pokaže kot opozorilo in gumb za kopiranje
+   ostane izklopljen. Vpiši prave podatke organizatorja kampanje
+   (poseben TRR z oznako »za referendumsko kampanjo«, 16. člen ZVRK). */
+ZZB.donacije = {
+  organizator: "DOPOLNI: ime organizatorja kampanje",
+  naslov: "DOPOLNI: naslov organizatorja",
+  iban: "DOPOLNI: SI56 …",                 // poseben TRR »za referendumsko kampanjo«
+  banka: "DOPOLNI: banka in BIC",
+  namen: "DOPOLNI: npr. Prispevek za referendumsko kampanjo",
+  sklic: "DOPOLNI: npr. SI99",
+  kodaNamena: "DOPOLNI: npr. OTHR",
+  qr: "",                                   // pot do slike UPN QR (npr. assets/upn-qr.png), ko bodo podatki znani
+  // za kaj gre denar — "primer" naj ostane DOPOLNI, dokler nimamo pravih cen
+  nameni: [
+    { ikona: "letaki", naslov: "Letaki", opis: "Od vrat do vrat, na stojnicah in v nabiralnikih — tam, kamor televizija ne seže.", primer: "DOPOLNI: npr. 10 € = … letakov" },
+    { ikona: "plakati", naslov: "Plakati", opis: "Na plakatnih mestih po vsej Sloveniji, da nihče ne pozabi na 6. december.", primer: "DOPOLNI: npr. 50 € = … plakatov" },
+    { ikona: "oglasi", naslov: "Oglasi na spletu", opis: "Da kratki videi in izračuni pridejo do ljudi zunaj našega mehurčka.", primer: "DOPOLNI: npr. 20 € = … ogledov" },
+    { ikona: "stojnice", naslov: "Stojnice in shodi", opis: "Šotori, ozvočenje, tisk in prevoz gradiva za pogovore v živo.", primer: "DOPOLNI: npr. 100 € = ena stojnica" }
+  ]
+};
+
+/* Zakonska pravila za donacije — preverjeno 30. 10. 2026
+   (ZVRK čl. 14, 16, 18, 23; SURS: povprečna bruto plača 2025 = 2.536,03 €).
+   Viri: material/raziskava.md, razdelek 9. */
+ZZB.donacijePravila = {
+  smejo: [
+    "Fizične osebe — vsak_a od nas.",
+    "Društva, sindikati, zavodi in druge nepridobitne organizacije."
+  ],
+  nesmejo: [
+    "Podjetja in samostojni podjetniki (s.p.).",
+    "Država, občine in javne ustanove.",
+    "Tuje osebe in organizacije."
+  ],
+  dejstva: [
+    { st: "25.360,30\u00a0€", t: "Največ, kar lahko ena oseba skupaj prispeva za kampanjo (10 povprečnih bruto plač)." },
+    { st: "2.536,03\u00a0€", t: "Nad tem zneskom moramo ime, naslov in znesek donatorja objaviti v poročilu na AJPES." },
+    { st: "50\u00a0€", t: "Največ v gotovini. Vse drugo le z nakazilom." }
+  ],
+  tocke: [
+    "Nakaži s svojega računa ali s plačilnim nalogom z imenom in naslovom. Anonimnih prispevkov zakon ne dovoljuje — banka nam sporoči podatke o plačniku.",
+    "Ne plačuj sam_a tiska ali oglasov za kampanjo. Tudi to je prispevek, ki ga moramo s pogodbo vpisati v poročilo — raje se oglasi pri nas.",
+    "Prostovoljno delo ni prispevek in nima omejitve.",
+    "Vsa sredstva gredo na poseben račun za referendumsko kampanjo. Po kampanji oddamo poročilo na AJPES, morebitni presežek gre v humanitarne namene."
+  ],
+  vir: "Zakon o volilni in referendumski kampanji (ZVRK), 14., 16., 18. in 22. člen · povprečna plača 2025: SURS"
+};

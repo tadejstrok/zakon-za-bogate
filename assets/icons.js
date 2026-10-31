@@ -63,6 +63,24 @@
       // srce v dlani
       oskrba: G(`<path d="M12 12 8.5 8.5a2.4 2.4 0 0 1 3.5-3.2 2.4 2.4 0 0 1 3.5 3.2z"/><path d="M2 16h5l5 2h5l5-3M2 21h14"/>`)
     },
+    doniraj: {
+      // kup letakov
+      letaki: G(`<path d="M5 3h11l3 3v15H5z"/><path d="M16 3v3h3"/><path d="M8 10h8M8 14h8M8 18h5"/>`),
+      // plakat na stebru
+      plakati: G(`<path d="M3 3h18v12H3z"/><path d="M12 15v7M8 22h8"/><path d="M7 7h10M7 11h6"/>`),
+      // telefon z valovi
+      oglasi: G(`<rect x="5" y="2" width="11" height="20"/><path d="M9 18h3"/><path d="M19 8a4 4 0 0 1 0 6M21.5 6a7.5 7.5 0 0 1 0 10"/>`),
+      // stojnica s streho
+      stojnice: G(`<path d="M2 8l2-5h16l2 5z"/><path d="M2 8v2h20V8"/><path d="M4 10v11M20 10v11M4 15h16"/>`),
+      // dva kvadrata — kopiraj
+      kopiraj: G(`<rect x="8" y="8" width="13" height="13"/><path d="M16 8V3H3v13h5"/>`),
+      // dvignjena roka
+      roka: G(`<path d="M8 12V4.5a1.5 1.5 0 0 1 3 0V11"/><path d="M11 10V3.5a1.5 1.5 0 0 1 3 0V11"/><path d="M14 10.5V5a1.5 1.5 0 0 1 3 0v8"/><path d="M8 11.5 6.5 9.8a1.6 1.6 0 0 0-2.4 2.1L8 18c1.2 2 2.8 3 5 3h1a5 5 0 0 0 5-5v-6a1.5 1.5 0 0 0-3 0"/>`),
+      // slika
+      grafike: G(`<rect x="3" y="4" width="18" height="16"/><circle cx="9" cy="10" r="2"/><path d="M3 18l6-5 4 3 3-2 5 4"/>`),
+      // trije ljudje
+      trije: G(`<circle cx="12" cy="6" r="3"/><circle cx="5" cy="9" r="2.2"/><circle cx="19" cy="9" r="2.2"/><path d="M7 21v-3a5 5 0 0 1 10 0v3M1 20v-2a4 4 0 0 1 5-3.8M23 20v-2a4 4 0 0 0-5-3.8"/>`)
+    },
     // roka s kazalcem, ki kaže desno
     palec: svg(24, `<path d="M1 10h4v10H1z"/><path d="M5 11l4-2h11.5a1.5 1.5 0 0 1 0 3H13"/><path d="M13 12h1a1.5 1.5 0 0 1 0 3h-1"/><path d="M13 15h.5a1.5 1.5 0 0 1 0 3H13"/><path d="M13.5 18a1.5 1.5 0 0 1 0 3H9l-4-1.5"/>`, 1.8),
     clen: G(`<path d="M6 3h9l4 4v14H6z"/><path d="M15 3v4h4"/><path d="M9 12h7M9 16h7"/>`)

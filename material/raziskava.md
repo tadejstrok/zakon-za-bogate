@@ -295,3 +295,43 @@ Uporabljeno na strani:
 - Pobuda Državnega sveta (14. 10. 2026) o odgovorni osebi in hrupu — ni najdena na ds-rs.si.
 - Vrhovec v Dnevniku (29. 10. 2026) — ni preverjeno.
 - Trditev nasprotnikov ZGos-1 o 200 mio € škode — vir ni najden.
+
+---
+
+## 9. Donacije za referendumsko kampanjo — kaj zahteva zakon (preverjeno 30. 10. 2026)
+
+**Viri:**
+- ZVRK — Zakon o volilni in referendumski kampanji (Uradni list RS, št. 41/07, 103/07 – ZPolS-D, 11/11, 28/11 – odl. US in 98/13), [neuradno prečiščeno besedilo št. 3, PISRS](https://pisrs.si/api/datoteke/integracije/356934105). Členi 2, 3, 14, 16, 17, 18, 22, 23.
+- Ministrstvo za javno upravo: [Vodnik za organizatorje volilnih in referendumskih kampanj, januar 2026](https://www.gov.si/assets/ministrstva/MJU/STIPS/Volitve/Vodnik-za-organizatorje-volilnih-in-referendumskih-kampanj-2026.pdf), pogl. 4 in 7.
+- SURS: [povprečna mesečna plača za leto 2025](https://www.stat.si/StatWeb/News/Index/14184) — **2.536,03 € bruto**.
+- STA: [DZ je referendum razpisal 16. 10. 2026](https://tax-fin-lex.si/home/Novica/37640); roki za referendumska opravila tečejo od 30. 10. 2026.
+
+**Pravila (za referendum na državni ravni):**
+
+| Pravilo | Kaj velja | Člen |
+|---|---|---|
+| Organizator kampanje | Pravna ali fizična oseba, ki je pobudnik referenduma ali zainteresirana za izid (državljan z volilno pravico, s.p., pravna oseba s sedežem v RS). Vsak ima lahko le enega organizatorja. Tujci ne smejo organizirati kampanje. Organizator je odgovoren za zakonitost. | 3 |
+| Prijava DVK | Podatki o organizatorju najpozneje **25 dni pred glasovanjem** → do **11. 11. 2026**. | 17(3) |
+| Poseben TRR | Z oznako »za referendumsko kampanjo« in navedbo referenduma; odpreti najpozneje 25 dni pred glasovanjem (**11. 11. 2026**) in vsekakor pred prvo transakcijo. Ker je bil dan glasovanja določen več kot 45 dni po odločitvi DZ (16. 10. → 6. 12. = 51 dni), se lahko račun odpre in zbira **od 16. 10. 2026**. Vsa sredstva se zbirajo in vsi stroški plačujejo **samo s tega računa**. Zapreti najpozneje **4 mesece po glasovanju** (do 6. 4. 2027). | 16 |
+| Kdo sme prispevati | **Fizične osebe.** Pri referendumu tudi **pravne osebe zasebnega prava, ki niso ustanovljene za pridobivanje dobička** (društva, sindikati, zavodi, ustanove …). | 14(1), 14(5) |
+| Kdo ne sme | Državni organi, občine, pravne osebe javnega prava, **podjetja** (pridobitne pravne osebe zasebnega prava), **s.p.** in posamezniki, ki samostojno opravljajo dejavnost; **tuje fizične in pravne osebe**. Prepovedani so tudi nedenarni prispevki teh oseb (npr. brezplačen oglasni prostor podjetja). | 14(5), 14(6), Vodnik 4.1 |
+| Najvišji znesek | Skupni prispevki ene fizične osebe za kampanjo ≤ **10 povprečnih bruto mesečnih plač** iz preteklega leta → 10 × 2.536,03 € = **25.360,30 €**. Enaka meja velja za prenos z računa organizatorja (fizična oseba ali nepridobitna pravna oseba). Za prispevke nepridobitnih pravnih oseb drugim organizatorjem zakon zneska izrecno ne omejuje (omejitev je le skupni strošek kampanje). | 14(1), 14(7) |
+| Gotovina | Največ **50 €** na osebo za kampanjo; z imenom, priimkom, EMŠO in naslovom. Višje zneske le prek banke ali ponudnika plačilnih storitev. | 14(1) |
+| Ni anonimnih prispevkov | Banka/ponudnik mora organizatorju sporočiti podatke za identifikacijo plačnika (ime, priimek, davčna, naslov; pri pravni osebi firma, matična, sedež). Prispevki v nasprotju z zakonom se v **30 dneh** nakažejo v humanitarne namene. | 14(9), 14(10) |
+| Nedenarni prispevki | Tudi podarjeno blago, plačilo stroška kampanje (npr. tisk letakov), brezplačna storitev ali izreden popust so prispevek — šteje v mejo in v poročilo; potrebna pisna pogodba. **Prostovoljno delo fizične osebe ni prispevek.** | 14(2), 14(3) |
+| Objava donatorjev | V poročilu AJPES: ime, priimek, naslov in znesek vsake fizične osebe, ki na dan glasovanja skupaj preseže **1 povprečno bruto mesečno plačo** (2.536,03 €); pri nepridobitnih pravnih osebah ime, sedež in znesek nad istim pragom. AJPES poročila objavi na spletu. | 18(2)3, 18(4) |
+| Poročilo | Na AJPES najpozneje **15 dni po zaprtju računa**. Računsko sodišče lahko revizijo opravi v 6 mesecih po roku za zaprtje. Organizator referenduma nima pravice do povračila stroškov iz proračuna. | 18(1), Vodnik 7 |
+| Presežek | Organizator, ki ni stranka, mora presežek ob zaprtju računa nameniti v humanitarne namene. | 22 |
+| Najvišji stroški | **0,25 € na volilnega upravičenca v državi** (število objavi MNZ ob začetku opravil). | 23(6) |
+| Kampanja | Najprej 30 dni pred glasovanjem (**od 6. 11. 2026**), konec 24 ur pred glasovanjem (molk od sobote, 5. 12.). Na gradivu kampanje mora biti naveden naročnik. | 2, 7, Vodnik 3 |
+
+**Kaj to pomeni za stran `doniraj.html`:**
+- Stran sme prikazati le TRR organizatorja z oznako »za referendumsko kampanjo«; ne zbira plačil sama.
+- Pri nakazilu mora biti razviden plačnik — nakazilo z lastnega računa ali s plačilnim nalogom z imenom in naslovom.
+- Podjetja in s.p. ne smejo donirati; društva in sindikati lahko.
+- Kdor bi sam plačal tisk ali oglas, s tem da prispevek — to mora iti prek organizatorja (pisna pogodba, poročilo).
+
+**Odprto (vprašati organizatorja ali MJU):**
+- Ali tujec s prebivališčem v Sloveniji velja za »tujo fizično osebo« (zakon ne opredeli; previdno: ne).
+- Ali morajo spletni plačilni ponudniki (npr. PayPal, kartice) organizatorju posredovati vse identifikacijske podatke — do potrditve le klasično nakazilo / UPN.
+- Naročnik na spletni strani v času kampanje (od 6. 11.): dodati v nogo ime organizatorja.
