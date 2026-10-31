@@ -22,16 +22,13 @@
     ...Object.values(ZZB.poslediceZakona || {}).map((x) => x.naslov)
   ])];
 
-  // znak strani: bogataški klobuk (cilinder)
-  const HAT = `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 2.8Q12 1.9 17.4 2.8L16.5 18H7.5Z" fill="currentColor"/><rect x="7.2" y="13.6" width="9.6" height="2.2" fill="var(--red)"/><path d="M1.8 15.8Q2.4 19.8 6.4 19.8H17.6Q21.6 19.8 22.2 15.8Q19 17.6 12 17.6Q5 17.6 1.8 15.8Z" fill="currentColor"/></svg>`;
-
   const header = $("#header");
   if (header) {
     const t = tickerItems.concat(tickerItems).map((x) => `<span>${x}</span>`).join("");
     header.outerHTML = `
       <div class="ticker" aria-hidden="true"><div class="ticker__track" style="animation-duration:${tickerItems.length * 6}s">${t}${t}</div></div>
       <header class="header"><div class="wrap">
-        <a class="logo" href="index.html"><span class="logo__mark">${HAT}</span>Zakon za bogate</a>
+        <a class="logo" href="index.html"><span class="logo__mark"><img src="assets/logo-256.png" alt="" width="44" height="44"></span>Zakon za bogate</a>
         <nav class="nav" id="nav">${NAV.slice(1).map(([h, l, k]) => `<a href="${h}"${k === page ? ' aria-current="page"' : ""}>${l}</a>`).join("")}</nav>
         <div class="header__cta">
           <a class="btn btn--red btn--sm" href="aktiviraj.html">6. 12. glasuj proti</a>
@@ -393,7 +390,7 @@
       gal.innerHTML = ZZB.grafike.filter((g) => tema === "vse" || g.tema === tema).map((g, i) => `
         <figure class="gfx" style="margin:0">
           <div class="gfx__img">${g.src ? `<img src="${esc(g.src)}" alt="${esc(g.naslov)}">` :
-            `<div class="poster poster--${g.barva}"><span class="poster__small poster__brand">${HAT}ZAKON ZA BOGATE</span><span class="poster__big">${esc(g.velik)}</span><span class="poster__small">${esc(g.mali)}</span></div>`}</div>
+            `<div class="poster poster--${g.barva}"><span class="poster__small poster__brand"><img src="assets/logo-256.png" alt="">ZAKON ZA BOGATE</span><span class="poster__big">${esc(g.velik)}</span><span class="poster__small">${esc(g.mali)}</span></div>`}</div>
           <figcaption class="gfx__bar"><span class="mono">${esc(g.naslov)}</span>
             <span style="display:flex;gap:6px">
               <a class="btn btn--sm btn--paper" ${g.src ? `href="${esc(g.src)}" download` : 'aria-disabled="true" style="opacity:.45;pointer-events:none"'}>Prenesi</a>

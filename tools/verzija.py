@@ -12,7 +12,7 @@ import pathlib
 import re
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-REF = re.compile(r'(["\'])assets/([\w.-]+\.(?:css|js|svg))(?:\?v=[0-9a-f]+)?\1')
+REF = re.compile(r'(["\'])assets/([\w.-]+\.(?:css|js|svg|png))(?:\?v=[0-9a-f]+)?\1')
 
 
 def odtis(ime):

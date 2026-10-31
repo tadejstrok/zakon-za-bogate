@@ -3,18 +3,24 @@
    ============================================================ */
 
 :root {
-  --paper: #F2EEE5;
-  --paper-2: #E7E1D4;
-  --ink: #111110;
+  /* podoba 2 (design.md): rdeča ustavlja, modra obvešča */
+  --paper: #F5F1E9;
+  --paper-2: #EBE4D6;
+  --ink: #1C1B19;
   --ink-2: #3A3936;
-  --muted: #77736B;
-  --red: #D42A12;
-  --gold: #E8C15A;
-  --line: rgba(17, 17, 16, .16);
+  --muted: #6E6A62;
+  --red: #F32B00;      /* naslovi, ploskve, gumbi */
+  --red-ink: #C42300;  /* drobno rdeče besedilo (kontrast 5,2 : 1) */
+  --blue: #043ED4;     /* informacija, modre sekcije */
+  --white: #FFFFFF;
+  --gold: #F2C14E;     /* le ocena »zapleteno« */
+  --line: rgba(28, 27, 25, .16);
+  --on-blue-2: rgba(255, 255, 255, .82);
+  --on-blue-3: rgba(255, 255, 255, .7);
 
-  --display: "Archivo", "Arial Narrow", sans-serif;
-  --body: "Archivo", system-ui, sans-serif;
-  --mono: "JetBrains Mono", ui-monospace, monospace;
+  --display: "Archivo", "Arial Narrow", sans-serif;  /* naslovi: širina 62 %, teža 900 */
+  --body: "Poppins", system-ui, sans-serif;
+  --mono: "Poppins", system-ui, sans-serif;  /* oznake: Poppins 600, velike črke */
 
   --gutter: clamp(16px, 4vw, 56px);
   --max: 1440px;
@@ -22,7 +28,7 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; font-synthesis: none; }
 body {
   margin: 0;
   background: var(--paper);
@@ -222,7 +228,7 @@ button, input, select, textarea { font: inherit; color: inherit; }
 .money em { font-style: normal; font-family: var(--display); font-weight: 800; font-size: 30px; font-stretch: 75%; white-space: nowrap; }
 input[type="range"] { width: 100%; max-width: 460px; accent-color: var(--red); margin-top: 14px; }
 .hint { color: var(--muted); font-size: 15px; margin-top: 8px; }
-.section--ink .hint { color: #A9A49A; }
+.section--ink .hint { color: var(--on-blue-3); }
 .hidden { display: none !important; }
 
 /* račun */
@@ -678,7 +684,7 @@ input[type="range"] { width: 100%; max-width: 460px; accent-color: var(--red); m
 .pcard__d { font-size: 16px; line-height: 1.45; color: var(--ink-2); }
 .pcard__n { margin-top: auto; font-size: 12px; }
 .pcard:hover { background: var(--ink); color: var(--paper); }
-.pcard:hover .pcard__d { color: #C9C4B8; }
+.pcard:hover .pcard__d { color: var(--on-blue-2); }
 .pcard:hover .pcard__ic { box-shadow: 4px 4px 0 var(--paper); border-color: var(--paper); }
 .pcard--all { background: var(--red); justify-content: flex-end; }
 .pcard--all .pcard__d { color: var(--ink); }
@@ -721,18 +727,18 @@ input[type="range"] { width: 100%; max-width: 460px; accent-color: var(--red); m
 .zakaj__cols p { margin: 0; font-size: 20px; line-height: 1.5; }
 
 /* ---------- vstopna stran: namesto tega ---------- */
-.namesto__gosp { display: flex; flex-direction: column; gap: 8px; max-width: 360px; margin: 0; color: #C9C4B8; font-size: 17px; line-height: 1.4; }
+.namesto__gosp { display: flex; flex-direction: column; gap: 8px; max-width: 360px; margin: 0; color: var(--on-blue-2); font-size: 17px; line-height: 1.4; }
 .namesto__gosp .d { font-size: clamp(64px, 7vw, 112px); color: var(--paper); }
 .ngrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: var(--paper); border: 2px solid var(--paper); }
 .ncard { background: var(--ink); padding: 24px; display: flex; flex-direction: column; gap: 12px; min-height: 220px; }
 .ncard__st { font-family: var(--display); font-stretch: 62%; font-weight: 900; font-size: clamp(56px, 5.5vw, 88px); line-height: .85; color: var(--red); white-space: nowrap; }
 .ncard__t { font-size: 18px; line-height: 1.4; }
-.ncard__v { margin-top: auto; font-size: 11px; color: #A9A49A; }
-.namesto__vir { margin: 16px 0 0; font-size: 11px; color: #A9A49A; }
+.ncard__v { margin-top: auto; font-size: 11px; color: var(--on-blue-3); }
+.namesto__vir { margin: 16px 0 0; font-size: 11px; color: var(--on-blue-3); }
 
 /* ---------- podstran ukrepi: kdo plača račun ---------- */
 .racun__txt { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; margin-top: 48px; max-width: 1100px; }
-.racun__txt p { margin: 0; font-size: 18px; line-height: 1.5; color: #C9C4B8; }
+.racun__txt p { margin: 0; font-size: 18px; line-height: 1.5; color: var(--on-blue-2); }
 
 /* ---------- več citatov zagovornikov ---------- */
 .quote { margin: 0; }
@@ -814,7 +820,7 @@ input[type="range"] { width: 100%; max-width: 460px; accent-color: var(--red); m
 }
 .hcard__ic { width: 64px; height: 64px; display: grid; place-items: center; margin-bottom: 12px; background: var(--red); color: var(--ink); border: 2px solid var(--paper); }
 .hcard__ic svg { width: 36px; height: 36px; }
-.hcard__d { color: #C9C4B8; font-size: 16px; line-height: 1.45; flex: 1; }
+.hcard__d { color: var(--on-blue-2); font-size: 16px; line-height: 1.45; flex: 1; }
 .hcard:hover { background: var(--paper); color: var(--ink); }
 .hcard:hover .hcard__d { color: var(--ink-2); }
 .hcard:hover .hcard__ic { border-color: var(--ink); }
@@ -842,3 +848,90 @@ input[type="range"] { width: 100%; max-width: 460px; accent-color: var(--red); m
   .logo { font-size: 26px; }
   .header__cta .btn { padding: 8px 12px; font-size: 14px; }
 }
+
+
+/* ============================================================
+   PODOBA 2 — nova art direkcija (glej design.md)
+   Črni okvirji in odmaknjene sence ostanejo.
+   ============================================================ */
+
+/* naslovi: Archivo (širina in teža iz osnovnih pravil); besedilo: Poppins */
+.btn { font-family: var(--body); font-weight: 700; text-transform: uppercase; letter-spacing: .02em; }
+.mono, .eyebrow, .tag, .mx__h, .filters__reset, .clen__go { font-weight: 600; letter-spacing: .08em; }
+.eyebrow { color: var(--blue); }
+body { font-weight: 500; }
+b, strong { font-weight: 700; }
+
+/* drobno rdeče besedilo -> temnejša rdeča */
+.filters__reset, .clen:hover b, .amt-minus { color: var(--red-ink); }
+
+/* trak in rdeči gumb: belo na rdeči */
+.ticker { color: var(--white); }
+.btn--red { --fg: var(--white); }
+
+/* logotip v glavi */
+.logo__mark { width: 44px; height: 44px; background: none; }
+.logo__mark img { width: 44px; height: 44px; display: block; }
+.logo { gap: 12px; }
+
+/* vstopni naslov: modro + rdeče kot na letaku */
+.hero__title { color: var(--blue); }
+
+/* nalepka (iz letaka) */
+.hero .wrap { position: relative; }
+.sticker {
+  position: absolute; top: clamp(8px, 2vw, 24px); right: var(--gutter);
+  width: clamp(120px, 13vw, 190px); aspect-ratio: 1; border-radius: 50%;
+  background: var(--red); color: var(--white); transform: rotate(18deg);
+  display: grid; place-items: center; text-align: center;
+  font-family: var(--body); font-weight: 700; line-height: 1.05;
+  font-size: clamp(13px, 1.25vw, 18px);
+}
+.sticker b { display: block; font-family: var(--display); font-stretch: 62%; font-weight: 900; font-size: 2.3em; line-height: .9; }
+
+/* odštevanje: brez črne ploskve */
+.countdown { background: var(--paper); color: var(--ink); }
+
+/* modre sekcije namesto črnih */
+.section--ink, .footer { background: var(--blue); color: var(--white); }
+.on-dark .red, .footer .red, .mx__us .red {
+  color: var(--white); text-decoration: underline;
+  text-decoration-thickness: .07em; text-underline-offset: .1em;
+}
+.mx__us .mx__h.red { text-decoration: none; }
+.on-dark .eyebrow, .footer .eyebrow { color: var(--white); }
+.on-dark .btn { border-color: var(--ink); box-shadow: 4px 4px 0 var(--ink); }
+.on-dark .btn:hover { box-shadow: 6px 6px 0 var(--ink); }
+.on-dark .btn--paper, .on-dark .btn:not(.btn--red) { --bg: var(--paper); --fg: var(--ink); }
+.receipt { box-shadow: 10px 10px 0 var(--ink); }
+.receipt__vs { background: var(--blue); color: var(--white); }
+.receipt__vs .d { color: var(--white); }
+.footer a:hover { color: var(--white); text-decoration: underline; }
+.mx__us, .mb-myth .us { background: var(--blue); color: var(--white); }
+.ncard { background: var(--blue); }
+.ncard__st { color: var(--white); }
+.ngrid { background: var(--white); border-color: var(--white); }
+.teaser a:hover, .pcard:hover { background: var(--blue); color: var(--white); }
+.pcard:hover .pcard__ic { border-color: var(--ink); box-shadow: 4px 4px 0 var(--ink); }
+.poster--ink { background: var(--blue); color: var(--white); }
+.hcard { background: var(--blue); }
+
+/* ocene ukrepov */
+[data-v="zapleteno-slabo"] { --c: #FF7A4D; }
+[data-v="dobro-ce"] { --c: var(--blue); }
+.measure__ic[data-v="dobro-ce"] { color: var(--white); }
+
+/* znak na grafikah */
+.poster__brand img { width: 18px; height: 18px; }
+.poster--red .poster__brand img { background: var(--paper); border-radius: 50%; }
+
+@media (max-width: 900px) {
+  .sticker { top: 8px; right: 16px; width: 112px; font-size: 12px; }
+}
+@media (max-width: 560px) {
+  .sticker { display: none; }  /* na telefonu isto sporočilo nosi številka 340.000 pod naslovom */
+}
+
+/* na modri: izbrani gumbi in drsniki brez rdeče */
+.on-dark .chip input:checked + span { background: var(--paper); color: var(--ink); border-color: var(--paper); }
+.on-dark input[type="range"] { accent-color: var(--paper); }
